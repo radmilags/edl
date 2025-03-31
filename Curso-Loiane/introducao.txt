@@ -1,0 +1,9 @@
+- É uma estrutura que armazena e organiza dados e informações para que eles possam ser acessados de forma eficiente.
+- Cada estrutura de dados se comporta de forma diferente e a eficiência delas varia de acordo com o cenário
+
+Qual estrutura de dados você utilizaria? 
+
+- Buscar registros no banco de dados (lista)
+- Registro de chamadas de métodos e funções de um compilador ()
+- Sistema de senhas ()
+- Organizar relacionamentos de uma rede social ()
