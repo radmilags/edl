@@ -1,12 +1,11 @@
 package Pilha.pilha_src;
 
 public class PilhaArray implements Pilha {
-    private Object[] array;
+    private Object[] array = new Object[100];
     private int topo;
 
-    public PilhaArray(int capacidade) {
-        this.array = new Object[capacidade];
-        this.topo = -1;
+    public PilhaArray(int posicao, int valor) {
+        this.array[posicao] = valor;
     }
 
     @Override
