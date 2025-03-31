@@ -1,16 +1,4 @@
-/*
- * Created on 01/09/2004
- *
- * TODO To change the template for this generated file go to
- * Window - Preferences - Java - Code Style - Code Templates
- */
-
-/**
- * @author Robinson
- *
- * TODO To change the template for this generated type comment go to
- * Window - Preferences - Java - Code Style - Code Templates
- */
+package Pilha.pilha_src;
 public class testePilha {
 
 	public static void main(String[] args) {		
