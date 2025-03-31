@@ -4,6 +4,6 @@
 Qual estrutura de dados você utilizaria? 
 
 - Buscar registros no banco de dados (lista)
-- Registro de chamadas de métodos e funções de um compilador ()
-- Sistema de senhas ()
-- Organizar relacionamentos de uma rede social ()
+- Registro de chamadas de métodos e funções de um compilador (Pilha)
+- Sistema de fichas que tem prioridade (filas)
+- Organizar relacionamentos de uma rede social (Grafos)
