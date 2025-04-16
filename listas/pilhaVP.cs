@@ -2,7 +2,7 @@ using System;
 public class Pilha{
   private int[] ArrayPilha;
   private int tamanho = 0; //numero de elementos iniciais numa pilha
-  private int topoV = -1; //inicio da pilha
+  private int topoV = -1; //início da pilha
   private int topoP; //fim da pilha
   private int capacidade; // tamanho inicial do array
 
@@ -38,11 +38,6 @@ public class Pilha{
       NovoArray[i] = ArrayPilha[i];
     }
    
-    // int aux =  topoP;
-    // for(int i = topoP+capacidade; i < capacidade*2; i++){
-    //   NovoArray[i] = ArrayPilha[aux];
-    //   aux++;
-    // }
     for (int i = capacidade - 1; i >= topoP; i--)
     {
       NovoArray[capacidade*2 - (capacidade - i)] = ArrayPilha[i];
