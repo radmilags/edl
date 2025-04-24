@@ -3,10 +3,13 @@
   <img src="https://cdn.iconscout.com/icon/free/png-256/free-java-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-language-pack-logos-icons-1174953.png?f=webp" width="150px" />
 </p>
 
-# EDL
-Estrutura de dados lineares - disciplina do 3º período de TADS
+# 📚 Estrutura de Dados Lineares (EDL) - 2023.2
 
-A codificação das atividades será feita em C#. Futuramente pretendo tentar os exercícios em Java.
+<p align="center">
+  <img src="https://img.shields.io/badge/C%23-Exercícios-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#" />
+  <img src="https://img.shields.io/badge/Java-Futuro-A7C?style=for-the-badge&logo=java&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/TADS-3º%20Período-yellow?style=for-the-badge" alt="TADS" />
+</p>
 
 ---
 
