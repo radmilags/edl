@@ -6,8 +6,8 @@
 # 📚 Estrutura de Dados Lineares (EDL) - 2023.2
 
 <p align="center">
-  <img src="https://img.shields.io/badge/C%23-Exercícios-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#" />
-  <img src="https://img.shields.io/badge/Java-Futuro-A7C?style=for-the-badge&logo=java&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/C%23-Linguagem-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#" />
+  <img src="https://img.shields.io/badge/Java-Linguagem-A7C?style=for-the-badge&logo=java&logoColor=white" alt="Java" />
   <img src="https://img.shields.io/badge/TADS-3º%20Período-yellow?style=for-the-badge" alt="TADS" />
 </p>
 
