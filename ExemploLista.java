@@ -12,8 +12,6 @@ public class ExemploLista{
         lista.add(scanner.nextLine());
         lista.add(scanner.nextLine());
 
-        //imprimir os elementos
-
         System.out.println(lista.get(0));
         System.out.println(lista.get(2));
         System.out.println(lista.get(1));
