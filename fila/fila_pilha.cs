@@ -106,11 +106,6 @@ public class Stack<T>
     }
 }
 
-
-
-
-
-
 class Program {
   public static void Main (string[] args)
   {
