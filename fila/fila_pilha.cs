@@ -42,7 +42,7 @@ public class Queue<T>
     }
 
 
-    public T Dequeue()
+    public T Dequeue() 
     {
         if (IsEmpty())
         {
@@ -77,7 +77,7 @@ public class Stack<T>
         top = null;
     }
 
-
+    // novo elemento no topo
     public void Adiciona(T item)
     {
         Node<T> newNode = new Node<T>(item);
@@ -85,15 +85,16 @@ public class Stack<T>
         top = newNode;
     }
 
-
+    // retorna o primeiro elemento e remove
     public T Pop()
     {
+        // verifica se está vazia, ou seja, nao tem topo
         if (IsEmpty())
         {
             throw new InvalidOperationException("A pilha está vazia.");
         }
 
-
+        // 
         T data = top.Data;
         top = top.Next;
         return data;
