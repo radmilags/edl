@@ -42,20 +42,13 @@ EDL/
 
 ### Rodando um arquivo C#
 
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/seu-usuario/EDL.git
-cd EDL
-```
-
-2. Navegue até a pasta de uma atividade específica:
+1. Navegue até a pasta de uma atividade específica:
 
 ```bash
 cd Atividade1
 ```
 
-3. Compile e execute com o .NET CLI:
+2. Compile e execute com o .NET CLI:
 
 ```bash
 dotnet run
