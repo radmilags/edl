@@ -61,7 +61,7 @@ csc MeuArquivo.cs
 ./MeuArquivo.exe
 ```
 
-### Rodando Arquivos em Java (Futuro)
+### Rodando Arquivos em Java
 
 **Pré-requisitos:** [JDK](https://www.oracle.com/java/technologies/javase-downloads.html) instalado
 
@@ -72,31 +72,6 @@ javac MeuArquivo.java
 # Executar o arquivo
 java MeuArquivo
 ```
-
----
-
-## 🧠 Comandos Git Essenciais
-
-```bash
-# Clonar o repositório
-git clone https://github.com/seu-usuario/EDL.git
-
-# Verificar alterações
-git status
-
-# Adicionar arquivos alterados
-git add .
-
-# Commitar mudanças
-git commit -m "mensagem do commit"
-
-# Enviar para o GitHub
-git push origin main
-
-# Atualizar repositório local
-git pull origin main
-```
-
 ---
 
 ## 💬 Convenções de Mensagens de Commit
