@@ -14,7 +14,6 @@ public class Pilha{
   private int topoV = -1; //inicio da pilha
   private int topoP; //fim da pilha
   private int capacidade; // tamanho inicial do array
-  private double reducao = 1.0/3; // redução para quando a pilha estiver cheia
 
   public Pilha(int n){
     capacidade = n;
@@ -75,6 +74,9 @@ public class Pilha{
   }
 
   public void VerificaPorcentagem() {
+
+    //n_elementos Vermelhos = topoV+1
+    //n_elementos Pretos = capacidade - topoP
     int totalElementos = topoV + 1 + (capacidade - topoP); // elementos das duas pilhas
     if (capacidade > 1 && totalElementos <= capacidade / 3) {
         int novaCapacidade = capacidade / 2;
@@ -114,21 +116,3 @@ public class Pilha{
   }
 }
 
-class Program {
-  public static void Main (string[] args) 
-  {
-    Pilha p = new Pilha(7);
-    for(int i = 0; i < 7; i++){
-      if(i%2==0){
-        p.InserirV(i);
-      }
-      else{
-        p.InserirP(i);
-      }
-    }
-    p.PrintaPilha();
-    Console.WriteLine(p.PopV());
-    Console.WriteLine(p.PopP());
-    p.PrintaPilha();
-  }
-}

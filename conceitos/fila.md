@@ -49,8 +49,6 @@ O **TAD Fila** é uma estrutura de dados que armazena objetos arbitrários e seg
 
 ## 🧠 Exemplos
 
-Aqui estão alguns exemplos de como as operações podem ser usadas:
-
 ```java
 Fila minhaFila = new Fila();
 minhaFila.enqueue(1);  // Adiciona 1 à fila
