@@ -73,11 +73,30 @@ public class Pilha{
   public int[] GetArray(){
     return ArrayPilha;
   }
-  
-  public void VerificaPorcentagem(){
-      //n_elementos Vermelhos = topoV+1
-      //n_elementos Pretos = capacidade - topoP
-  }
+
+  public void VerificaPorcentagem() {
+    int totalElementos = topoV + 1 + (capacidade - topoP); // elementos das duas pilhas
+    if (capacidade > 1 && totalElementos <= capacidade / 3) {
+        int novaCapacidade = capacidade / 2;
+        int[] novoArray = new int[novaCapacidade];
+
+        for (int i = 0; i <= topoV; i++) {
+            novoArray[i] = ArrayPilha[i];
+        }
+
+        int elementosPreta = capacidade - topoP;
+        int novoTopoP = novaCapacidade - elementosPreta;
+      
+        for (int i = 0; i < elementosPreta; i++) {
+            novoArray[novoTopoP + i] = ArrayPilha[topoP + i];
+        }
+      
+        ArrayPilha = novoArray;
+        capacidade = novaCapacidade;
+        topoP = novoTopoP;
+    }
+}
+
  
   
   public void PrintaPilha() {
@@ -113,35 +132,3 @@ class Program {
     p.PrintaPilha();
   }
 }
-
-/*
-Exceção para o método pop, remoção
-public class ExceptionTest
-{
-    static double SafeDivision(double x, double y)
-    {
-        if (y == 0)
-            throw new DivideByZeroException();
-        return x / y;
-    }
-
-    public static void Main()
-    {
-        // Input for test purposes. Change the values to see
-        // exception handling behavior.
-        double a = 98, b = 0;
-        double result;
-
-        try
-        {
-            result = SafeDivision(a, b);
-            Console.WriteLine("{0} divided by {1} = {2}", a, b, result);
-        }
-        catch (DivideByZeroException)
-        {
-            Console.WriteLine("Attempted divide by zero.");
-        }
-    }
-}
-
-*/
