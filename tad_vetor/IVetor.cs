@@ -1,5 +1,3 @@
-// Arquivo: IVetor.cs
-
 public interface IVetor<T>
 {
     // Adiciona um item no final do vetor.
