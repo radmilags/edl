@@ -1,4 +1,3 @@
-// Arquivo: VetorArray.cs
 using System;
 
 public class VetorArray<T> : IVetor<T>
