@@ -39,7 +39,7 @@ public class Program
         Console.WriteLine($" Vetor contém 77? {vetor.Contem(77)}");
         Console.WriteLine($" Índice do elemento 30: {vetor.IndiceDe(30)}");
 
-        Console.WriteLine($"\n Removendo elemento no índice 1 (valor 10)");
+        Console.WriteLine($"\n Removendo elemento no índice 1");
         int removido = vetor.RemoverEm(1);
         Console.WriteLine($"Item removido: {removido}. Vetor: {vetor}. Tamanho: {vetor.Tamanho}");
         
@@ -50,32 +50,30 @@ public class Program
     
     public static void TestarRedimensionamentoArray()
     {
-        Console.WriteLine("\nTESTANDO REDIMENSIONAMENTO DO VetorArray");
         var vetor = new VetorArray<int>(4); // Capacidade inicial 4
-        Console.WriteLine($"Estado inicial: Tamanho={vetor.Tamanho}, Capacidade={vetor.Capacidade}");
+        Console.WriteLine($"Tamanho={vetor.Tamanho}, Capacidade={vetor.Capacidade}");
 
         Console.WriteLine("\n Adicionando 4 elementos para encher o vetor");
         for (int i = 1; i <= 4; i++)
         {
             vetor.Adicionar(i * 10);
-            Console.WriteLine($"Adicionado {i*10}. Tamanho={vetor.Tamanho}, Capacidade={vetor.Capacidade}");
+            Console.WriteLine($"Tamanho={vetor.Tamanho}, Capacidade={vetor.Capacidade}");
         }
 
-        Console.WriteLine("\n Adicionando 5º elemento para FORÇAR O CRESCIMENTO (dobrar capacidade)");
+        Console.WriteLine("(dobrar capacidade)");
         vetor.Adicionar(50);
-        Console.WriteLine($"Adicionado 50. Tamanho={vetor.Tamanho}, Capacidade={vetor.Capacidade}");
+        Console.WriteLine($"Tamanho={vetor.Tamanho}, Capacidade={vetor.Capacidade}");
         Console.WriteLine($"Vetor atual: {vetor}");
 
-        Console.WriteLine("\n Removendo elementos para FORÇAR O ENCOLHIMENTO (ocupação < 1/3)");
-        Console.WriteLine($"Capacidade atual: {vetor.Capacidade}. Limite para encolher: {vetor.Capacidade / 3.0:F2}. Tamanho precisa ser < 3.");
+        Console.WriteLine("\n Removendo elementos");
         
         vetor.RemoverEm(vetor.Tamanho - 1);
-        Console.WriteLine($"Removido um. Tamanho={vetor.Tamanho}, Capacidade={vetor.Capacidade}");
+        Console.WriteLine($"Tamanho={vetor.Tamanho}, Capacidade={vetor.Capacidade}");
         vetor.RemoverEm(vetor.Tamanho - 1);
         Console.WriteLine($"Removido outro. Tamanho={vetor.Tamanho}, Capacidade={vetor.Capacidade}");
         
         vetor.RemoverEm(vetor.Tamanho - 1);
-        Console.WriteLine($"Removido mais um. Tamanho={vetor.Tamanho}, Capacidade={vetor.Capacidade}");
+        Console.WriteLine($"Tamanho={vetor.Tamanho}, Capacidade={vetor.Capacidade}");
         Console.WriteLine($"Vetor final: {vetor}");
     }
 }

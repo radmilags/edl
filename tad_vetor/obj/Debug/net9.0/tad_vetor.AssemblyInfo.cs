@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tad_vetor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f43000e698c81ca120aacb06746f72b62da0201")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+716877d2d772c87d44d5da172c15cf601429d12a")]
 [assembly: System.Reflection.AssemblyProductAttribute("tad_vetor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tad_vetor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
