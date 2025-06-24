@@ -28,6 +28,5 @@ public interface ILista<T>
 
     bool EstaVazia();
 
-    // Remove todos os elementos da lista.
     void Limpar();
 }
