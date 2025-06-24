@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "arv_bin_pesq/1.0.0": {
+        "runtime": {
+          "arv_bin_pesq.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "arv_bin_pesq/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
