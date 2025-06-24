@@ -21,6 +21,8 @@ public class Program
         Console.WriteLine($"Vetor inicial: {vetor}. Tamanho: {vetor.Tamanho}. Vazio? {vetor.EstaVazio}");
         
         Console.WriteLine("\n Adicionando 10, 20, 30");
+
+        
         vetor.Adicionar(10);
         vetor.Adicionar(20);
         vetor.Adicionar(30);
