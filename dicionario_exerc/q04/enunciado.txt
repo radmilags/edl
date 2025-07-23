@@ -1,0 +1,5 @@
+- Modifique a HashTable, da questão 1 (com linear probing) para que ela
+redimensione automaticamente quando o fator de carga (número de elementos /
+tamanho da tabela) exceder 0.5. O novo tamanho deve ser o dobro do tamanho
+(tratar questão do número N baseado no número primo) atual e todos os elementos
+devem ser reinseridos.

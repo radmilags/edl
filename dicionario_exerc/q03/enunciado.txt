@@ -1,0 +1,3 @@
+Função de Hash Simples
+- Escreva uma função de hash que converta uma string em um índice de uma tabela
+de tamanho fixo. A função deve ser eficiente e distribuir bem as chaves.
