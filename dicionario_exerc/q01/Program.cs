@@ -11,10 +11,10 @@ public class Program
         htChaining.Insert("Carlos", 25);
 
         Console.WriteLine($"Valor de 'Bob': {htChaining.Find("Bob")}"); // 42
-        Console.WriteLine($"Itens na tabela: {htChaining.Count}"); // 3
+        Console.WriteLine($"Itens na tabela: {htChaining.Count}"); 
 
         htChaining.Remove("Alice");
-        Console.WriteLine($"Valor de 'Alice' após remoção: {htChaining.Find("Alice")}"); // 0 (default)
+        Console.WriteLine($"Valor de 'Alice' após remoção: {htChaining.Find("Alice")}"); // 0 
         Console.WriteLine($"Itens na tabela: {htChaining.Count}"); // 2
 
         Console.WriteLine("\n--- Testando HashTable com Sondagem Linear (Linear Probing) ---");
