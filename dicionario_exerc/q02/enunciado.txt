@@ -1,0 +1,3 @@
+Contagem de Frequência de Palavras
+Leia um texto e use uma Hash Table para contar a frequência de cada palavra.
+Exemplo de saída: {"hello": 3, "world": 2}.
