@@ -6,33 +6,32 @@ public class Program
     {
         Console.WriteLine("--- Testando HashTable com Encadeamento (Chaining) ---");
         var htChaining = new HashTableChaining<string, int>();
-        htChaining.Insert("força", 100);
-        htChaining.Insert("magia", 200);
-        htChaining.Insert("sabedoria", 300);
+        htChaining.Insert("Alice", 30);
+        htChaining.Insert("Bob", 42);
+        htChaining.Insert("Carlos", 25);
 
-        Console.WriteLine($"Valor de 'magia': {htChaining.Find("magia")}"); // 200
+        Console.WriteLine($"Valor de 'Bob': {htChaining.Find("Bob")}"); // 42
         Console.WriteLine($"Itens na tabela: {htChaining.Count}"); // 3
 
-        htChaining.Remove("força");
-        Console.WriteLine($"Valor de 'força' após remoção: {htChaining.Find("força")}"); // 0 (default)
+        htChaining.Remove("Alice");
+        Console.WriteLine($"Valor de 'Alice' após remoção: {htChaining.Find("Alice")}"); // 0 (default)
         Console.WriteLine($"Itens na tabela: {htChaining.Count}"); // 2
 
         Console.WriteLine("\n--- Testando HashTable com Sondagem Linear (Linear Probing) ---");
         var htLinear = new HashTableLinearProbing<string, string>();
-        htLinear.Insert("elemento", "Fogo");
-        htLinear.Insert("planeta", "Marte");
-        htLinear.Insert("ferramenta", "Athmame");
+        htLinear.Insert("SKU-001", "Laptop");
+        htLinear.Insert("SKU-002", "Mouse");
+        htLinear.Insert("SKU-003", "Teclado");
 
-        Console.WriteLine($"Valor de 'planeta': {htLinear.Find("planeta")}"); // Marte
+        Console.WriteLine($"Valor de 'SKU-002': {htLinear.Find("SKU-002")}"); // Mouse
         Console.WriteLine($"Itens na tabela: {htLinear.Count}"); // 3
         
-        htLinear.Remove("elemento");
-        Console.WriteLine($"Valor de 'elemento' após remoção: {htLinear.Find("elemento")}"); // null (default)
+        htLinear.Remove("SKU-001");
+        Console.WriteLine($"Valor de 'SKU-001' após remoção: {htLinear.Find("SKU-001")}"); // null (default)
         Console.WriteLine($"Itens na tabela: {htLinear.Count}"); // 2
         
-        // Inserindo de novo pra ver se ele reutiliza o espaço com lápide
-        htLinear.Insert("deusa", "Hécate");
-        Console.WriteLine($"Valor de 'deusa': {htLinear.Find("deusa")}");
+        htLinear.Insert("SKU-004", "Monitor");
+        Console.WriteLine($"Valor de 'SKU-004': {htLinear.Find("SKU-004")}");
         Console.WriteLine($"Itens na tabela: {htLinear.Count}"); // 3
     }
 }
