@@ -1,0 +1,4 @@
+1. Implementação Básica de Hash Table
+Crie uma classe HashTable com operações insert(), find() e remove().
+• Use encadeamento para tratar colisões (use arraylist).
+• Segunda versão usando linear probing para tratar colisões
