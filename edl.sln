@@ -1,31 +1,12 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arv_bin_pesq", "arv_bin_pesq\arv_bin_pesq.csproj", "{C4E47973-5545-89AE-6F6A-114AC327E3F7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tad_lista", "tad_lista\tad_lista.csproj", "{49DD30EB-92C4-1A95-7B26-C062F7FE6F13}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tad_vetor", "tad_vetor\tad_vetor.csproj", "{1775B67C-7BF4-7673-EEF3-27B5F5D17CF8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C4E47973-5545-89AE-6F6A-114AC327E3F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4E47973-5545-89AE-6F6A-114AC327E3F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4E47973-5545-89AE-6F6A-114AC327E3F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4E47973-5545-89AE-6F6A-114AC327E3F7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{49DD30EB-92C4-1A95-7B26-C062F7FE6F13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{49DD30EB-92C4-1A95-7B26-C062F7FE6F13}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{49DD30EB-92C4-1A95-7B26-C062F7FE6F13}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{49DD30EB-92C4-1A95-7B26-C062F7FE6F13}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1775B67C-7BF4-7673-EEF3-27B5F5D17CF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1775B67C-7BF4-7673-EEF3-27B5F5D17CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1775B67C-7BF4-7673-EEF3-27B5F5D17CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1775B67C-7BF4-7673-EEF3-27B5F5D17CF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
