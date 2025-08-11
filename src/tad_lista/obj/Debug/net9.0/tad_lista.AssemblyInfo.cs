@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("tad_vetor")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("tad_lista")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+716877d2d772c87d44d5da172c15cf601429d12a")]
-[assembly: System.Reflection.AssemblyProductAttribute("tad_vetor")]
-[assembly: System.Reflection.AssemblyTitleAttribute("tad_vetor")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6230c89be8a3eed907a30c98ffdf4c72405b2b57")]
+[assembly: System.Reflection.AssemblyProductAttribute("tad_lista")]
+[assembly: System.Reflection.AssemblyTitleAttribute("tad_lista")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

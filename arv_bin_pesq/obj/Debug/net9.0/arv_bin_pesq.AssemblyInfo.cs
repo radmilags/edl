@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("arv_bin_pesq")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06e76443ab051afb572d00a28ea5d1b4d8ac7903")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6230c89be8a3eed907a30c98ffdf4c72405b2b57")]
 [assembly: System.Reflection.AssemblyProductAttribute("arv_bin_pesq")]
 [assembly: System.Reflection.AssemblyTitleAttribute("arv_bin_pesq")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
