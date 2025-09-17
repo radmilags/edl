@@ -3,7 +3,7 @@
   <img src="https://cdn.iconscout.com/icon/free/png-256/free-java-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-language-pack-logos-icons-1174953.png?f=webp" width="150px" />
 </p>
 
-# 📚 Estrutura de Dados Lineares (EDL) - 2023.1
+# 📚 Estrutura de Dados Lineares (EDL) - 2025.2
 
 <p align="center">
   <img src="https://img.shields.io/badge/C%23-Linguagem-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#" />
