@@ -48,7 +48,13 @@ EDL/
 cd Atividade1
 ```
 
-2. Compile e execute com o .NET CLI:
+2. Crie um novo projeto:
+
+```bash
+dotnet new console
+```
+
+3. Compile e execute com o .NET CLI:
 
 ```bash
 dotnet run

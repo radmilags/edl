@@ -1,0 +1,15 @@
+/workspaces/edl/provas/Av2/obj/Debug/net8.0/Av2.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/edl/provas/Av2/obj/Debug/net8.0/Av2.AssemblyInfoInputs.cache
+/workspaces/edl/provas/Av2/obj/Debug/net8.0/Av2.AssemblyInfo.cs
+/workspaces/edl/provas/Av2/obj/Debug/net8.0/Av2.csproj.CoreCompileInputs.cache
+/workspaces/edl/provas/Av2/obj/Debug/net8.0/Av2.sourcelink.json
+/workspaces/edl/provas/Av2/bin/Debug/net8.0/Av2
+/workspaces/edl/provas/Av2/bin/Debug/net8.0/Av2.deps.json
+/workspaces/edl/provas/Av2/bin/Debug/net8.0/Av2.runtimeconfig.json
+/workspaces/edl/provas/Av2/bin/Debug/net8.0/Av2.dll
+/workspaces/edl/provas/Av2/bin/Debug/net8.0/Av2.pdb
+/workspaces/edl/provas/Av2/obj/Debug/net8.0/Av2.dll
+/workspaces/edl/provas/Av2/obj/Debug/net8.0/refint/Av2.dll
+/workspaces/edl/provas/Av2/obj/Debug/net8.0/Av2.pdb
+/workspaces/edl/provas/Av2/obj/Debug/net8.0/Av2.genruntimeconfig.cache
+/workspaces/edl/provas/Av2/obj/Debug/net8.0/ref/Av2.dll
