@@ -1,17 +1,16 @@
 using System;
 
-// --- Estrutura Básica da Árvore Binária de Pesquisa (BST) ---
 public class No
 {
     public int elemento;
-    public No pai;
+    public No parent;
     public No esquerdo;
     public No direito;
 
-    public No(int elem, No noPai)
+    public No(int elem, No noParent)
     {
         elemento = elem;
-        pai = noPai;
+        parent = noParent;
         esquerdo = null;
         direito = null;
     }
@@ -27,31 +26,27 @@ public class ArvBin
         raiz = null;
         contadorNos = 0;
     }
-
-    // Método de acesso, conforme nomenclatura do professor
     public No root()
     {
         return raiz;
     }
 
-    // Método genérico, conforme nomenclatura do professor
     public int size()
     {
         return contadorNos;
     }
 
-    // Método de atualização para construir a árvore
     public void Insert(int elem)
     {
         raiz = InsertRecursivo(raiz, null, elem);
     }
 
-    private No InsertRecursivo(No noAtual, No noPai, int elem)
+    private No InsertRecursivo(No noAtual, No noParent, int elem)
     {
         if (noAtual == null)
         {
             contadorNos++;
-            return new No(elem, noPai);
+            return new No(elem, noParent);
         }
 
         if (elem < noAtual.elemento)
@@ -67,7 +62,6 @@ public class ArvBin
     }
 }
 
-// --- CLASSE COM O MÉTODO DA PROVA ---
 public class SolucaoProva
 {
     private int ContarNos(No no)
