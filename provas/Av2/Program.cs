@@ -130,7 +130,6 @@ public class Programa
         int[] dadosB = { 1, 3, 5, 6, 10, 18, 20 };
         foreach(var elem in dadosB) B.Insert(elem);
         
-        Console.WriteLine("--- Questão 1: Interseção de Árvores Binárias de Pesquisa (Versão Simples) ---");
         Console.WriteLine("Elementos da Árvore A: " + string.Join(", ", dadosA));
         Console.WriteLine("Elementos da Árvore B: " + string.Join(", ", dadosB));
 
