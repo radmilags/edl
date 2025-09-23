@@ -1,0 +1,15 @@
+/workspaces/edl/src/fila/fila_circular/obj/Debug/net8.0/fila_circular.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/edl/src/fila/fila_circular/obj/Debug/net8.0/fila_circular.AssemblyInfoInputs.cache
+/workspaces/edl/src/fila/fila_circular/obj/Debug/net8.0/fila_circular.AssemblyInfo.cs
+/workspaces/edl/src/fila/fila_circular/obj/Debug/net8.0/fila_circular.csproj.CoreCompileInputs.cache
+/workspaces/edl/src/fila/fila_circular/obj/Debug/net8.0/fila_circular.sourcelink.json
+/workspaces/edl/src/fila/fila_circular/bin/Debug/net8.0/fila_circular
+/workspaces/edl/src/fila/fila_circular/bin/Debug/net8.0/fila_circular.deps.json
+/workspaces/edl/src/fila/fila_circular/bin/Debug/net8.0/fila_circular.runtimeconfig.json
+/workspaces/edl/src/fila/fila_circular/bin/Debug/net8.0/fila_circular.dll
+/workspaces/edl/src/fila/fila_circular/bin/Debug/net8.0/fila_circular.pdb
+/workspaces/edl/src/fila/fila_circular/obj/Debug/net8.0/fila_circular.dll
+/workspaces/edl/src/fila/fila_circular/obj/Debug/net8.0/refint/fila_circular.dll
+/workspaces/edl/src/fila/fila_circular/obj/Debug/net8.0/fila_circular.pdb
+/workspaces/edl/src/fila/fila_circular/obj/Debug/net8.0/fila_circular.genruntimeconfig.cache
+/workspaces/edl/src/fila/fila_circular/obj/Debug/net8.0/ref/fila_circular.dll

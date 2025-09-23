@@ -1,0 +1,15 @@
+/workspaces/edl/src/fila/fila_duas_pilhas/bin/Debug/net8.0/fila_duas_pilhas
+/workspaces/edl/src/fila/fila_duas_pilhas/bin/Debug/net8.0/fila_duas_pilhas.deps.json
+/workspaces/edl/src/fila/fila_duas_pilhas/bin/Debug/net8.0/fila_duas_pilhas.runtimeconfig.json
+/workspaces/edl/src/fila/fila_duas_pilhas/bin/Debug/net8.0/fila_duas_pilhas.dll
+/workspaces/edl/src/fila/fila_duas_pilhas/bin/Debug/net8.0/fila_duas_pilhas.pdb
+/workspaces/edl/src/fila/fila_duas_pilhas/obj/Debug/net8.0/fila_duas_pilhas.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/edl/src/fila/fila_duas_pilhas/obj/Debug/net8.0/fila_duas_pilhas.AssemblyInfoInputs.cache
+/workspaces/edl/src/fila/fila_duas_pilhas/obj/Debug/net8.0/fila_duas_pilhas.AssemblyInfo.cs
+/workspaces/edl/src/fila/fila_duas_pilhas/obj/Debug/net8.0/fila_duas_pilhas.csproj.CoreCompileInputs.cache
+/workspaces/edl/src/fila/fila_duas_pilhas/obj/Debug/net8.0/fila_duas_pilhas.sourcelink.json
+/workspaces/edl/src/fila/fila_duas_pilhas/obj/Debug/net8.0/fila_duas_pilhas.dll
+/workspaces/edl/src/fila/fila_duas_pilhas/obj/Debug/net8.0/refint/fila_duas_pilhas.dll
+/workspaces/edl/src/fila/fila_duas_pilhas/obj/Debug/net8.0/fila_duas_pilhas.pdb
+/workspaces/edl/src/fila/fila_duas_pilhas/obj/Debug/net8.0/fila_duas_pilhas.genruntimeconfig.cache
+/workspaces/edl/src/fila/fila_duas_pilhas/obj/Debug/net8.0/ref/fila_duas_pilhas.dll

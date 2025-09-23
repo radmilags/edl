@@ -1,0 +1,2 @@
+Pilha com listas encadeadas
+23/09/2025 - terça-feira

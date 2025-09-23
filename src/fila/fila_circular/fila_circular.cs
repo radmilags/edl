@@ -1,12 +1,14 @@
 using System;
 
-public class FilaCircular<T> //ver se isso aqui ta certo
+public class FilaCircular<T>
 {
     private T[] array;
+
+    private int n; 
     private int capacidade;
     private int tamanho;
-    private int frente;
-    private int traseira;
+    private int i;
+    private int f;
 
 
     public FilaCircular(int capacidade)
@@ -14,8 +16,8 @@ public class FilaCircular<T> //ver se isso aqui ta certo
       this.capacidade = capacidade;
       array = new T[capacidade];
       tamanho = 0;
-      frente = 0;
-      traseira = -1;
+      i = 0;
+      f = -1;
     }
 
 
@@ -27,8 +29,8 @@ public class FilaCircular<T> //ver se isso aqui ta certo
       }
 
 
-      traseira = (traseira + 1) % capacidade;
-      array[traseira] = item;
+      f = (f + 1) % capacidade;
+      array[f] = item;
       tamanho++;
     }
 
@@ -40,9 +42,8 @@ public class FilaCircular<T> //ver se isso aqui ta certo
         throw new InvalidOperationException("A fila está vazia.");
       }
 
-
-      T itemRemovido = array[frente];
-      frente = (frente + 1) % capacidade;
+      T itemRemovido = array[i];
+      i = (i + 1) % capacidade;
       tamanho--;
       return itemRemovido;
     }
@@ -56,7 +57,7 @@ public class FilaCircular<T> //ver se isso aqui ta certo
       }
 
 
-      return array[frente];
+      return array[i];
     }
 
 
@@ -66,9 +67,10 @@ public class FilaCircular<T> //ver se isso aqui ta certo
     }
 
 
-    public int Size()
-    {
-        return tamanho;
+  public int Size()
+  {
+    // return (n - i + f) % n;
+    return tamanho;
     }
 
 
@@ -80,36 +82,13 @@ public class FilaCircular<T> //ver se isso aqui ta certo
 
       for (int i = 0; i < tamanho; i++)
       {
-        novoArray[i] = array[(frente + i) % capacidade];
+        novoArray[i] = array[(i + i) % capacidade];
       }
 
 
       array = novoArray;
       capacidade = novaCapacidade;
-      frente = 0;
-      traseira = tamanho - 1;
+      i = 0;
+      f = tamanho - 1;
     }
-}
-
-
-class Program {
-  public static void Main (string[] args)
-  {
-    FilaCircular<int> fila = new FilaCircular<int>(3);
-    fila.Enqueue(1);
-    fila.Enqueue(2);
-    fila.Enqueue(3);
-   
-    Console.WriteLine(fila.Dequeue());
-    fila.Enqueue(4);
-   
-    Console.WriteLine(fila.Dequeue());
-    Console.WriteLine(fila.Dequeue());
-    Console.WriteLine(fila.Dequeue());
-   
-    fila.Enqueue(5);
-    Console.WriteLine(fila.Front());
-
-
-  }
 }
