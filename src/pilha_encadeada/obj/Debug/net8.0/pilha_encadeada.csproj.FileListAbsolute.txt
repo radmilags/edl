@@ -1,0 +1,15 @@
+/workspaces/edl/src/pilha_encadeada/bin/Debug/net8.0/pilha_encadeada
+/workspaces/edl/src/pilha_encadeada/bin/Debug/net8.0/pilha_encadeada.deps.json
+/workspaces/edl/src/pilha_encadeada/bin/Debug/net8.0/pilha_encadeada.runtimeconfig.json
+/workspaces/edl/src/pilha_encadeada/bin/Debug/net8.0/pilha_encadeada.dll
+/workspaces/edl/src/pilha_encadeada/bin/Debug/net8.0/pilha_encadeada.pdb
+/workspaces/edl/src/pilha_encadeada/obj/Debug/net8.0/pilha_encadeada.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/edl/src/pilha_encadeada/obj/Debug/net8.0/pilha_encadeada.AssemblyInfoInputs.cache
+/workspaces/edl/src/pilha_encadeada/obj/Debug/net8.0/pilha_encadeada.AssemblyInfo.cs
+/workspaces/edl/src/pilha_encadeada/obj/Debug/net8.0/pilha_encadeada.csproj.CoreCompileInputs.cache
+/workspaces/edl/src/pilha_encadeada/obj/Debug/net8.0/pilha_encadeada.sourcelink.json
+/workspaces/edl/src/pilha_encadeada/obj/Debug/net8.0/pilha_encadeada.dll
+/workspaces/edl/src/pilha_encadeada/obj/Debug/net8.0/refint/pilha_encadeada.dll
+/workspaces/edl/src/pilha_encadeada/obj/Debug/net8.0/pilha_encadeada.pdb
+/workspaces/edl/src/pilha_encadeada/obj/Debug/net8.0/pilha_encadeada.genruntimeconfig.cache
+/workspaces/edl/src/pilha_encadeada/obj/Debug/net8.0/ref/pilha_encadeada.dll
