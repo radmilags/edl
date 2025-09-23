@@ -34,7 +34,8 @@ O **TAD Fila** é uma estrutura de dados que armazena objetos arbitrários e seg
 
 ## ⚠️ Exceções
 
-- **`EFilaVazia`**: Levantada quando se tenta remover ou ver um elemento do início da fila, mas a fila está vazia.
+- **`EFilaVaziaException`**: Chamada quando se tenta remover ou ver um elemento do início da fila, mas a fila está vazia.
+- 
 
 ---
 
@@ -55,3 +56,10 @@ minhaFila.enqueue(1);  // Adiciona 1 à fila
 minhaFila.enqueue(2);  // Adiciona 2 à fila
 System.out.println(minhaFila.dequeue());  // Remove e imprime 1
 System.out.println(minhaFila.first());    // Retorna 2, sem removê-lo
+
+```C#
+Fila minhaFila = new Fila();
+minhaFila.enqueue(1);  // Adiciona 1 à fila
+minhaFila.enqueue(2);  // Adiciona 2 à fila
+Console.WriteLine(minhaFila.dequeue());  // Remove e imprime 1
+Console.WriteLine(minhaFila.first());    // Retorna 2, sem removê-lo
