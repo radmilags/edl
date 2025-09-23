@@ -1,6 +1,6 @@
 using System;
 
-public class FilaCircular<T>
+public class FilaCircular<T> //ver se isso aqui ta certo
 {
     private T[] array;
     private int capacidade;
