@@ -1,14 +1,12 @@
 using System;
 public class No
 {
-    public int elemento;
-    public No? esquerdo;
-    public No? direito;
+    public object elemento;
+    public No? proximo;
 
-    public No(int elemento)
+    public No(object elemento)
     {
         this.elemento = elemento;
-        esquerdo = null;
-        direito = null;
+        proximo = null;
     }
 }
