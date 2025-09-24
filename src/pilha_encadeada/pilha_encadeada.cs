@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 public class Pilha_Encadeada
 {
-    private No? topo;
+    private No? topo; 
     private int capacidade;
     private int tamanho = 0;
     private object[] arrayPilha;
@@ -26,12 +26,13 @@ public class Pilha_Encadeada
         }
         else
         {
-            Console.WriteLine("Pilha cheia!");
+
+
         }
     }
 
     public void DobraArray()
     {
-        
+
     }
 }
