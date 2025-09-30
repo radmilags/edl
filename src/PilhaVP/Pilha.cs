@@ -73,7 +73,7 @@ public class Pilha{
     return ArrayPilha;
   }
 
-  public void VerificaPorcentagem() {
+  public void VerificaTamanho() {
 
     //n_elementos Vermelhos = topoV+1
     //n_elementos Pretos = capacidade - topoP

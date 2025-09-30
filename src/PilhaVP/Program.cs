@@ -28,11 +28,11 @@ class Program {
     Console.WriteLine("Pop Preto: " + p.PopP());
     p.PrintaPilha();
 
-    Console.WriteLine("Mais pops:");
+    Console.WriteLine("Redução da pilha:");
     p.PopV();
     p.PopV();
     p.PopP();
-    p.VerificaPorcentagem(); //redução do array
+    p.VerificaTamanho(); //redução do array
     p.PrintaPilha();
 
     Console.WriteLine("Inserindo novamente após redução:");
