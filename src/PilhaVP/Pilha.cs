@@ -9,19 +9,19 @@ OBS.: Sempre que o array (que contém as duas pilhas) estiver com 1/3 de utiliza
 using System;
 
 public class Pilha{
-  private int[] ArrayPilha;
+  private object[] ArrayPilha;
   private int tamanho = 0; //numero de elementos iniciais numa pilha
   private int topoV = -1; //inicio da pilha
   private int topoP; //fim da pilha
   private int capacidade; // tamanho inicial do array
 
-  public Pilha(int n){
-    capacidade = n;
-    topoP = n;
+  public Pilha(int capacidade){
+    this.capacidade = capacidade;
+    topoP = capacidade;
     ArrayPilha = new int[n];
   }
 
-  public void InserirV(int n){
+  public void InserirV(object n){
     if(tamanho < capacidade){
       ArrayPilha[++topoV] = n;
       tamanho++;
@@ -30,7 +30,7 @@ public class Pilha{
       this.DobraArray();
     }
   }
-  public void InserirP(int n){
+  public void InserirP(object n){
     
    if(tamanho < capacidade){
       ArrayPilha[--topoP] = n;
@@ -110,7 +110,7 @@ public class Pilha{
       // Console.WriteLine("] ");
       // Console.WriteLine($"top vermelho: {topoV} top preto: {topoP}");
     
-    foreach(int i in ArrayPilha){
+    foreach(object i in ArrayPilha){
       Console.WriteLine(i);
     }
   }

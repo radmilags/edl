@@ -2,7 +2,7 @@
 
 class Program {
   public static void Main(string[] args) {
-    Pilha p = new Pilha(4); 
+    Pilha p = new Pilha(); 
 
     Console.WriteLine("Inserindo elementos na pilha vermelha:");
     p.InserirV(1);
@@ -10,13 +10,13 @@ class Program {
     p.PrintaPilha();
 
     Console.WriteLine("Inserindo elementos na pilha preta:");
-    p.InserirP(9);
-    p.InserirP(7);
+    p.InserirP(3);
+    p.InserirP(4);
     p.PrintaPilha();
 
     Console.WriteLine("Inserindo mais elementos para forçar duplicação:");
-    p.InserirV(4); // DobraArray
-    p.InserirP(3);
+    p.InserirV(5); // DobraArray
+    p.InserirP(6);
     p.PrintaPilha();
 
     Console.WriteLine("Top das pilhas:");
@@ -36,8 +36,8 @@ class Program {
     p.PrintaPilha();
 
     Console.WriteLine("Inserindo novamente após redução:");
-    p.InserirP(10);
-    p.InserirV(11);
+    p.InserirP(7);
+    p.InserirV(8);
     p.PrintaPilha();
 
     Console.WriteLine("Topo após reinserções:");
