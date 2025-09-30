@@ -1,0 +1,1 @@
+Deque através de uma lista duplamente encadeada

@@ -1,0 +1,7 @@
+Deque com Listas
+Implemente um Deque através de uma lista duplamente encadeada e também através de uma lista simplesmente encadeada, 
+Após fazer as implementações do Deque, faça uma comparação das duas implementações utilizando a notação do Big O para os 
+métodos das duas implementações.
+
+Obs.: Entregar um PDF com as implementações e com a análise utilizando o Big O.
+Obs.: Seu código deve ser identado, com fontes monoespaçadas e colorido (use o padrão das principais IDEs - eclipse, vsCode, etc).

@@ -1,0 +1,15 @@
+/workspaces/edl/Atividades/deque-listas/atvd01/obj/Debug/net8.0/atvd01.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/edl/Atividades/deque-listas/atvd01/obj/Debug/net8.0/atvd01.AssemblyInfoInputs.cache
+/workspaces/edl/Atividades/deque-listas/atvd01/obj/Debug/net8.0/atvd01.AssemblyInfo.cs
+/workspaces/edl/Atividades/deque-listas/atvd01/obj/Debug/net8.0/atvd01.csproj.CoreCompileInputs.cache
+/workspaces/edl/Atividades/deque-listas/atvd01/obj/Debug/net8.0/atvd01.sourcelink.json
+/workspaces/edl/Atividades/deque-listas/atvd01/bin/Debug/net8.0/atvd01
+/workspaces/edl/Atividades/deque-listas/atvd01/bin/Debug/net8.0/atvd01.deps.json
+/workspaces/edl/Atividades/deque-listas/atvd01/bin/Debug/net8.0/atvd01.runtimeconfig.json
+/workspaces/edl/Atividades/deque-listas/atvd01/bin/Debug/net8.0/atvd01.dll
+/workspaces/edl/Atividades/deque-listas/atvd01/bin/Debug/net8.0/atvd01.pdb
+/workspaces/edl/Atividades/deque-listas/atvd01/obj/Debug/net8.0/atvd01.dll
+/workspaces/edl/Atividades/deque-listas/atvd01/obj/Debug/net8.0/refint/atvd01.dll
+/workspaces/edl/Atividades/deque-listas/atvd01/obj/Debug/net8.0/atvd01.pdb
+/workspaces/edl/Atividades/deque-listas/atvd01/obj/Debug/net8.0/atvd01.genruntimeconfig.cache
+/workspaces/edl/Atividades/deque-listas/atvd01/obj/Debug/net8.0/ref/atvd01.dll
