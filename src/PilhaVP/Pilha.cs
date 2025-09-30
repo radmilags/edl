@@ -102,17 +102,17 @@ public class Pilha{
  
   
   public void PrintaPilha() {
-      Console.Write("[ ");
-      for (int i=0; i < this.capacidade; i++) {
-        Console.Write(ArrayPilha[i]);
-        Console.Write(", ");
-      }
-      Console.WriteLine("] ");
-      Console.WriteLine($"top vermelho: {topoV} top preto: {topoP}");
+      // Console.Write("[ ");
+      // for (int i=0; i < this.capacidade; i++) {
+      //   Console.Write(ArrayPilha[i]);
+      //   Console.Write(", ");
+      // }
+      // Console.WriteLine("] ");
+      // Console.WriteLine($"top vermelho: {topoV} top preto: {topoP}");
     
-    // foreach(int i in ArrayPilha){
-    //     Console.WriteLine(i);
-    // }
+    foreach(int i in ArrayPilha){
+      Console.WriteLine(i);
+    }
   }
 }
 
