@@ -108,7 +108,7 @@ public class Pilha{
 
   public void VerificaTamanho() {
 
-    if (capacidade > 1 && TamanhoTotal() <= capacidade / 3) {
+    if (TamanhoTotal() <= capacidade / 3) {
         int novaCapacidade = capacidade / 2;
         object[] novoArray = new object[novaCapacidade];
 
