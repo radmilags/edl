@@ -64,10 +64,14 @@ public class Pilha{
     else return -1;
   }
   public object TopV(){
+     if (topoV < 0) 
+      throw new InvalidOperationException("Pilha vermelha está vazia.");
     return ArrayPilha[topoV];
   }
 
   public object TopP(){
+    if (topoP >= capacidade) 
+        throw new InvalidOperationException("Pilha preta está vazia.");
     return ArrayPilha[topoP];
   }
   public object[] GetArray(){
