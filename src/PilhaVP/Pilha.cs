@@ -22,25 +22,17 @@ public class Pilha{
     ArrayPilha = new object[capacidade];
   }
 
-  public void InserirV(object n){
-    if(tamanho < capacidade){
-      ArrayPilha[++topoV] = n;
-      tamanho++;
-    }
-    else{
-      DobraArray();
-    }
-  }
-  public void InserirP(object n){
-    
-   if(tamanho < capacidade){
-      ArrayPilha[--topoP] = n;
-      tamanho++;
-    }
-    else{
-      DobraArray();
-    }
-  }
+  public void InserirV(object n) {
+    if (topoV + 1 == topoP) DobraArray();
+    topoV++;
+    ArrayPilha[topoV] = n;
+}
+
+public void InserirP(object n) {
+    if (topoV + 1 == topoP) DobraArray();
+    topoP--;
+    ArrayPilha[topoP] = n;
+}
   public void DobraArray()
   {
     object[] NovoArray = new object[capacidade * 2];
@@ -55,22 +47,21 @@ public class Pilha{
     }
 
     ArrayPilha = NovoArray;
-    int novoTopoP = capacidade * 2 - (capacidade - topoP);
-    capacidade = capacidade * 2;
-    topoP = novoTopoP;
+    topoP = this.topoP + this.capacidade; 
+    capacidade = this.capacidade * 2;  
   }
 
   public object PopV(){
     if (topoV < 0) throw new InvalidOperationException("Pilha vermelha está vazia.");
-    object valor = ArrayPilha[topoV--];
-    tamanho--;
+    object valor = ArrayPilha[topoV];
+    topoV--;
     VerificaTamanho();
     return valor;
   }
   public object PopP(){
     if (topoP >= capacidade) throw new InvalidOperationException("Pilha preta está vazia.");
-    object valor = ArrayPilha[topoP++];
-    tamanho--;
+    object valor = ArrayPilha[topoP];
+    topoP++;
     VerificaTamanho();
     return valor;
   }
@@ -85,7 +76,18 @@ public class Pilha{
         throw new InvalidOperationException("Pilha preta está vazia.");
     return ArrayPilha[topoP];
   }
-  public object[] GetArray(){
+
+  public int TamanhoV() {
+    return topoV + 1;
+}
+public int TamanhoP() {
+    return capacidade - topoP;
+}
+public int TamanhoTotal() {
+    return TamanhoV() + TamanhoP();
+}
+  public object[] GetArray()
+  {
     return ArrayPilha;
   }
 
@@ -93,8 +95,8 @@ public class Pilha{
 
     //n_elementos Vermelhos = topoV+1
     //n_elementos Pretos = capacidade - topoP
-    int totalElementos = topoV + 1 + (capacidade - topoP); // elementos das duas pilhas
-    if (capacidade > 1 && totalElementos <= capacidade / 3) {
+    // int totalElementos = topoV + 1 + (capacidade - topoP); // elementos das duas pilhas
+    if (capacidade > 1 && TamanhoTotal() <= capacidade / 3) {
         int novaCapacidade = capacidade / 2;
         object[] novoArray = new object[novaCapacidade];
 
