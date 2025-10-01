@@ -28,7 +28,7 @@ public class Pilha{
       tamanho++;
     }
     else{
-      this.DobraArray();
+      DobraArray();
     }
   }
   public void InserirP(object n){
@@ -38,30 +38,41 @@ public class Pilha{
       tamanho++;
     }
     else{
-      this.DobraArray();
+      DobraArray();
     }
   }
-  public void DobraArray(){
-    object[] NovoArray = new object[capacidade*2];
-    for(int i = 0; i <= topoV; i++){
+  public void DobraArray()
+  {
+    object[] NovoArray = new object[capacidade * 2];
+    for (int i = 0; i <= topoV; i++)
+    {
       NovoArray[i] = ArrayPilha[i];
     }
 
     for (int i = capacidade - 1; i >= topoP; i--)
     {
-      NovoArray[capacidade*2 - (capacidade - i)] = ArrayPilha[i];
+      NovoArray[capacidade * 2 - (capacidade - i)] = ArrayPilha[i];
     }
-    
+
     ArrayPilha = NovoArray;
+    int novoTopoP = capacidade * 2 - (capacidade - topoP);
+    capacidade = capacidade * 2;
+    topoP = novoTopoP;
   }
 
   public object PopV(){
-    if(topoV > -1) return ArrayPilha[topoV--];
-    else return -1;
+    if (topoV < 0) throw new InvalidOperationException("Pilha vermelha está vazia.");
+    object valor = ArrayPilha[topoV--];
+    tamanho--;
+    VerificaTamanho();
+    return valor;
   }
   public object PopP(){
-    if(topoP <= capacidade) return ArrayPilha[topoP++];
-    else return -1;
+    if (topoP >= capacidade) throw new InvalidOperationException("Pilha preta está vazia.");
+    object valor = ArrayPilha[topoP++];
+    tamanho--;
+    VerificaTamanho();
+    return valor;
   }
   public object TopV(){
      if (topoV < 0) 
