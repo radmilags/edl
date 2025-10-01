@@ -11,7 +11,7 @@ using System.Linq;
 
 public class Pilha{
   private object[] ArrayPilha;
-  private int tamanho = 0; //numero de elementos iniciais numa pilha
+  private int tamanho = 0; //numero de elementos iniciais numa pilha - nao to mais usando isso
   private int topoV = -1; //inicio da pilha
   private int topoP; //fim da pilha
   private int capacidade; // tamanho inicial do array
@@ -26,15 +26,16 @@ public class Pilha{
     if (topoV + 1 == topoP) DobraArray();
     topoV++;
     ArrayPilha[topoV] = n;
-}
+  }
 
-public void InserirP(object n) {
+  public void InserirP(object n) {
     if (topoV + 1 == topoP) DobraArray();
     topoP--;
     ArrayPilha[topoP] = n;
-}
+  }
   public void DobraArray()
   {
+    Console.WriteLine("o array dobrou");
     object[] NovoArray = new object[capacidade * 2];
     for (int i = 0; i <= topoV; i++)
     {
@@ -53,17 +54,19 @@ public void InserirP(object n) {
 
   public object PopV(){
     if (topoV < 0) throw new InvalidOperationException("Pilha vermelha está vazia.");
-    object valor = ArrayPilha[topoV];
+    ArrayPilha[topoV] = null;
+    object elemento = ArrayPilha[topoV];
     topoV--;
     VerificaTamanho();
-    return valor;
+    return elemento;
   }
   public object PopP(){
     if (topoP >= capacidade) throw new InvalidOperationException("Pilha preta está vazia.");
-    object valor = ArrayPilha[topoP];
+    ArrayPilha[topoP] = null;
+    object elemento = ArrayPilha[topoP];
     topoP++;
     VerificaTamanho();
-    return valor;
+    return elemento;
   }
   public object TopV(){
      if (topoV < 0) 
@@ -73,19 +76,31 @@ public void InserirP(object n) {
 
   public object TopP(){
     if (topoP >= capacidade) 
-        throw new InvalidOperationException("Pilha preta está vazia.");
+      throw new InvalidOperationException("Pilha preta está vazia.");
     return ArrayPilha[topoP];
+  }
+
+  public int IndiceTopV(){
+    return topoV;
+  }
+
+  public int IndiceTopP(){
+    return topoP;
+  }
+
+  public int Capacidade(){
+    return capacidade;
   }
 
   public int TamanhoV() {
     return topoV + 1;
-}
-public int TamanhoP() {
+  }
+  public int TamanhoP() {
     return capacidade - topoP;
-}
-public int TamanhoTotal() {
+  }
+  public int TamanhoTotal() {
     return TamanhoV() + TamanhoP();
-}
+  }
   public object[] GetArray()
   {
     return ArrayPilha;
@@ -119,7 +134,7 @@ public int TamanhoTotal() {
   public void PrintaPilha() {
     
     foreach(object i in ArrayPilha){
-      Console.WriteLine(i);
+      if(i != null) Console.WriteLine(i);
     }
   }
 }
