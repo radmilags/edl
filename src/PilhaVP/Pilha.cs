@@ -93,15 +93,12 @@ public int TamanhoTotal() {
 
   public void VerificaTamanho() {
 
-    //n_elementos Vermelhos = topoV+1
-    //n_elementos Pretos = capacidade - topoP
-    // int totalElementos = topoV + 1 + (capacidade - topoP); // elementos das duas pilhas
     if (capacidade > 1 && TamanhoTotal() <= capacidade / 3) {
         int novaCapacidade = capacidade / 2;
         object[] novoArray = new object[novaCapacidade];
 
         for (int i = 0; i <= topoV; i++) {
-            novoArray[i] = ArrayPilha[i];
+          novoArray[i] = ArrayPilha[i];
         }
 
         int elementosPreta = capacidade - topoP;
