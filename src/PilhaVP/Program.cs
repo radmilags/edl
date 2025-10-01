@@ -1,5 +1,4 @@
 ﻿using System;
-
 class Program {
   public static void Main(string[] args) {
     Pilha p = new Pilha(4); 
