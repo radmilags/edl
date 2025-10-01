@@ -2,7 +2,7 @@
 
 class Program {
   public static void Main(string[] args) {
-    Pilha p = new Pilha(); 
+    Pilha p = new Pilha(4); 
 
     Console.WriteLine("Inserindo elementos na pilha vermelha:");
     p.InserirV(1);
@@ -14,16 +14,15 @@ class Program {
     p.InserirP(4);
     p.PrintaPilha();
 
-    Console.WriteLine("Inserindo mais elementos para forçar duplicação:");
-    p.InserirV(5); // DobraArray
+    p.InserirV(5); // DobraArray()
     p.InserirP(6);
-    p.PrintaPilha();
+    p.PrintaPilha(); //novapilha
 
-    Console.WriteLine("Top das pilhas:");
+    Console.WriteLine("Topo das Pilhas");
     Console.WriteLine("Topo Vermelho: " + p.TopV());
     Console.WriteLine("Topo Preto: " + p.TopP());
 
-    Console.WriteLine("Removendo elementos:");
+    Console.WriteLine("Removendo elementos");
     Console.WriteLine("Pop Vermelho: " + p.PopV());
     Console.WriteLine("Pop Preto: " + p.PopP());
     p.PrintaPilha();
@@ -35,12 +34,7 @@ class Program {
     p.VerificaTamanho(); //redução do array
     p.PrintaPilha();
 
-    Console.WriteLine("Inserindo novamente após redução:");
-    p.InserirP(7);
-    p.InserirV(8);
-    p.PrintaPilha();
-
-    Console.WriteLine("Topo após reinserções:");
+    Console.WriteLine("Novo topo");
     Console.WriteLine("Topo Vermelho: " + p.TopV());
     Console.WriteLine("Topo Preto: " + p.TopP());
   }

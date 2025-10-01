@@ -1,0 +1,15 @@
+/workspaces/edl/src/PilhaVP/obj/Debug/net8.0/PilhaVP.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/edl/src/PilhaVP/obj/Debug/net8.0/PilhaVP.AssemblyInfoInputs.cache
+/workspaces/edl/src/PilhaVP/obj/Debug/net8.0/PilhaVP.AssemblyInfo.cs
+/workspaces/edl/src/PilhaVP/obj/Debug/net8.0/PilhaVP.csproj.CoreCompileInputs.cache
+/workspaces/edl/src/PilhaVP/obj/Debug/net8.0/PilhaVP.sourcelink.json
+/workspaces/edl/src/PilhaVP/bin/Debug/net8.0/PilhaVP
+/workspaces/edl/src/PilhaVP/bin/Debug/net8.0/PilhaVP.deps.json
+/workspaces/edl/src/PilhaVP/bin/Debug/net8.0/PilhaVP.runtimeconfig.json
+/workspaces/edl/src/PilhaVP/bin/Debug/net8.0/PilhaVP.dll
+/workspaces/edl/src/PilhaVP/bin/Debug/net8.0/PilhaVP.pdb
+/workspaces/edl/src/PilhaVP/obj/Debug/net8.0/PilhaVP.dll
+/workspaces/edl/src/PilhaVP/obj/Debug/net8.0/refint/PilhaVP.dll
+/workspaces/edl/src/PilhaVP/obj/Debug/net8.0/PilhaVP.pdb
+/workspaces/edl/src/PilhaVP/obj/Debug/net8.0/PilhaVP.genruntimeconfig.cache
+/workspaces/edl/src/PilhaVP/obj/Debug/net8.0/ref/PilhaVP.dll

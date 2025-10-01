@@ -7,6 +7,7 @@ OBS.: Sempre que o array (que contém as duas pilhas) estiver com 1/3 de utiliza
 */
 
 using System;
+using System.Linq;
 
 public class Pilha{
   private object[] ArrayPilha;
@@ -18,7 +19,7 @@ public class Pilha{
   public Pilha(int capacidade){
     this.capacidade = capacidade;
     topoP = capacidade;
-    ArrayPilha = new int[n];
+    ArrayPilha = new object[capacidade];
   }
 
   public void InserirV(object n){
@@ -41,7 +42,7 @@ public class Pilha{
     }
   }
   public void DobraArray(){
-    int[] NovoArray = new int[capacidade*2];
+    object[] NovoArray = new object[capacidade*2];
     for(int i = 0; i <= topoV; i++){
       NovoArray[i] = ArrayPilha[i];
     }
@@ -54,22 +55,22 @@ public class Pilha{
     ArrayPilha = NovoArray;
   }
 
-  public int PopV(){
+  public object PopV(){
     if(topoV > -1) return ArrayPilha[topoV--];
     else return -1;
   }
-  public int PopP(){
+  public object PopP(){
     if(topoP <= capacidade) return ArrayPilha[topoP++];
     else return -1;
   }
-  public int TopV(){
+  public object TopV(){
     return ArrayPilha[topoV];
   }
 
-  public int TopP(){
+  public object TopP(){
     return ArrayPilha[topoP];
   }
-  public int[] GetArray(){
+  public object[] GetArray(){
     return ArrayPilha;
   }
 
@@ -80,7 +81,7 @@ public class Pilha{
     int totalElementos = topoV + 1 + (capacidade - topoP); // elementos das duas pilhas
     if (capacidade > 1 && totalElementos <= capacidade / 3) {
         int novaCapacidade = capacidade / 2;
-        int[] novoArray = new int[novaCapacidade];
+        object[] novoArray = new object[novaCapacidade];
 
         for (int i = 0; i <= topoV; i++) {
             novoArray[i] = ArrayPilha[i];
@@ -102,13 +103,6 @@ public class Pilha{
  
   
   public void PrintaPilha() {
-      // Console.Write("[ ");
-      // for (int i=0; i < this.capacidade; i++) {
-      //   Console.Write(ArrayPilha[i]);
-      //   Console.Write(", ");
-      // }
-      // Console.WriteLine("] ");
-      // Console.WriteLine($"top vermelho: {topoV} top preto: {topoP}");
     
     foreach(object i in ArrayPilha){
       Console.WriteLine(i);
