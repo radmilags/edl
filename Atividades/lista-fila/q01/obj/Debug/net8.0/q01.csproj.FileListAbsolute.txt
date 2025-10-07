@@ -1,0 +1,5 @@
+/workspaces/edl/Atividades/lista-fila/q01/obj/Debug/net8.0/q01.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/edl/Atividades/lista-fila/q01/obj/Debug/net8.0/q01.AssemblyInfoInputs.cache
+/workspaces/edl/Atividades/lista-fila/q01/obj/Debug/net8.0/q01.AssemblyInfo.cs
+/workspaces/edl/Atividades/lista-fila/q01/obj/Debug/net8.0/q01.csproj.CoreCompileInputs.cache
+/workspaces/edl/Atividades/lista-fila/q01/obj/Debug/net8.0/q01.sourcelink.json

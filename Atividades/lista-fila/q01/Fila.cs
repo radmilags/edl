@@ -3,8 +3,8 @@ using System.Collections.Generic;
 class Fila
 {
     private object[] fila;
-    private int size;
-    private int n_elementos;
+    private int size; // tamanho total da fila, independente se tem elementos ou nao
+    private int n_elementos; // numero exato de elementos que tem na fila
 
     private int i, f;
 
@@ -18,9 +18,14 @@ class Fila
 
     public void Enqueue(object o)
     {
-        fila[i] = o; // trabalhar as excecoes fila cheia
-        f++;
+        fila[f] = elemento;
+        f = (f + 1) % n;
         n_elementos++;
+        foreach (object o in fila)
+        {
+            if (o != null) Console.WriteLine(o);
+            else Console.WriteLine(null);
+        }
     }
 
     public int Size()
@@ -30,10 +35,32 @@ class Fila
 
     public object Dequeue()
     {
-        object elemento = array[i];
+        object elemento = fila[i];
         i = (i + 1) % n;
         n_elementos--;
+        foreach (object o in fila)
+        {
+            if (o != null) Console.WriteLine(o);
+            else Console.WriteLine(null);
+        }
         return elemento;
-        
+    }
+
+    public int NElementos()
+    {
+        return n_elementos;
+    }
+
+    public object First()
+    {
+        return fila[i];
+    }
+
+    public bool isEmpty()
+    {
+        if (n_elementos == 0) return true; // depois mude essa verificacao para um tratamento de exceções
+        // utilizar o encontro do inicio com o fim 
+        // if(i == f) --> lista vazia
+        return false;
     }
 }
