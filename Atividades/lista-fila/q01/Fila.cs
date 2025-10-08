@@ -14,6 +14,7 @@ class Fila
         i = 0;
         f = i + 1;
         n_elementos = 0;
+        size = capacidade;
     }
 
     public void Enqueue(object o)
