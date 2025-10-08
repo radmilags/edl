@@ -4,12 +4,12 @@ class Program
 {
     public static void Main(string[] args)
     {
-        Fila fila = new Fila(10, 0);
+        Deque deque = new Deque(10, 0);
 
-        Console.WriteLine(fila.isEmpty());
-        fila.Enqueue(10);
-        Console.WriteLine(fila.isEmpty());
+        Console.WriteLine(deque.isEmpty());
+        deque.Enqueue(10);
+        Console.WriteLine(deque.isEmpty());
 
-        fila.PrintaFila();
+        deque.PrintaFila();
     }
 }

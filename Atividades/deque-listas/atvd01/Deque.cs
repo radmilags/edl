@@ -1,28 +1,28 @@
 using System;
 using System.Collections.Generic;
 
-public class Fila
+public class Deque
 {
     private object[] array;
     private int n_elementos;
-    private int n; // tamanho
+    private int tamanho; // tamanho
     private int incremento;
     private int i, f;
 
-    public Fila(int n, int incremento)
+    public Deque(int tamanho, int incremento) // if incremento == 0; estratégia de duplicacao senao estrategia do incremento
     {
-        array = new object[n];
-        this.n=n; 
+        array = new object[tamanho];
+        this.tamanho=tamanho; 
         this.incremento=incremento;
     }
 
     public void Enqueue(object elemento)
     {
-        if (Size() == n - 1)
+        if (Size() == tamanho - 1)
         {
             int novoTam;
-            if (incremento == 0) novoTam = n * 2;
-            else novoTam = n + incremento;
+            if (incremento == 0) novoTam = tamanho * 2;
+            else novoTam = tamanho + incremento;
 
             object[] novoArray = new object[novoTam];
 
@@ -31,22 +31,22 @@ public class Fila
             for (int ff = 0; ff < Size(); ff++)
             {
                 novoArray[ff] = array[ii];
-                ii = (ii + 1) % n;
+                ii = (ii + 1) % tamanho;
             }
             f = Size();
             i = 0;
-            n = novoTam;
+            tamanho = novoTam;
             array = novoArray;
         }
         array[f] = elemento;
-        f = (f + 1) % n;
+        f = (f + 1) % tamanho;
         n_elementos++;
     }
 
     public object Dequeue()
     {
         object elemento = array[i];
-        i = (i + 1) % n;
+        i = (i + 1) % tamanho;
         n_elementos--;
         return elemento;
     }
@@ -62,7 +62,7 @@ public class Fila
 
     public int Size()
     {
-        return n;
+        return tamanho;
     }
 
     public int N_elementos()
