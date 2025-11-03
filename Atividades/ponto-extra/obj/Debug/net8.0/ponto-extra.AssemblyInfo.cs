@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ponto-extra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+714cd5e611db5b8e051187724deefb7b639eaba6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20a4888e1f1922821da28de86482357a5b2034a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("ponto-extra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ponto-extra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
