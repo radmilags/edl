@@ -1,0 +1,5 @@
+/workspaces/edl/Atividades/ponto-extra/obj/Debug/net8.0/ponto-extra.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/edl/Atividades/ponto-extra/obj/Debug/net8.0/ponto-extra.AssemblyInfoInputs.cache
+/workspaces/edl/Atividades/ponto-extra/obj/Debug/net8.0/ponto-extra.AssemblyInfo.cs
+/workspaces/edl/Atividades/ponto-extra/obj/Debug/net8.0/ponto-extra.csproj.CoreCompileInputs.cache
+/workspaces/edl/Atividades/ponto-extra/obj/Debug/net8.0/ponto-extra.sourcelink.json
