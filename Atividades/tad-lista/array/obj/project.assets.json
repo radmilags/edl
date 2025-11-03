@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspaces/edl/Atividades/teste/teste.csproj",
-      "projectName": "teste",
-      "projectPath": "/workspaces/edl/Atividades/teste/teste.csproj",
+      "projectUniqueName": "/workspaces/edl/Atividades/tad-lista/array/array.csproj",
+      "projectName": "array",
+      "projectPath": "/workspaces/edl/Atividades/tad-lista/array/array.csproj",
       "packagesPath": "/home/codespace/.nuget/packages/",
-      "outputPath": "/workspaces/edl/Atividades/teste/obj/",
+      "outputPath": "/workspaces/edl/Atividades/tad-lista/array/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/codespace/.nuget/NuGet/NuGet.Config"
