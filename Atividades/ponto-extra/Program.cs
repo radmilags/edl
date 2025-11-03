@@ -3,19 +3,37 @@ using System.Collections;
 
 public class Pilha{
     ArrayList pilha;
+    //private int top; nao foi preciso
 
     public Pilha(){
         pilha = new ArrayList();
     }
 
-    public void Push(object o){
+    public void Push(object o)
+    {
         pilha.Add(o);
-        topo++;
+    }
+    
+    public object Top()
+    {
+        if (isEmpty())
+        {
+            throw new InvalidOperationException("A pilha está vazia.");
+        }
+
+        return pilha[pilha.Count - 1]; 
     }
 
     public object Pop(){
-        if(isEmpty()) throw new InvalidOperationException("A pilha está vazia.");
-        pilha.Remove;
+        if (isEmpty())
+        {
+            throw new InvalidOperationException("A pilha está vazia.");
+        }
+
+        object o = pilha[pilha.Count - 1];
+        pilha.RemoveAt(pilha.Count - 1);
+        
+        return o;
     }
 
     public int Size(){
@@ -23,19 +41,20 @@ public class Pilha{
     }
 
     public bool isEmpty(){
-        if(pilha.Count == 0) return true;
-        return false;
+        return pilha.Count == 0;
     }
 
 }
 
 class Program{
     public static void Main(string[] args){
-        ArrayList pilha = new ArrayList();
+        Pilha pilha = new Pilha();
 
         pilha.Push(10);
         pilha.Push(5);
 
+        Console.WriteLine(pilha.Pop());
+        Console.WriteLine(pilha.Pop());
         Console.WriteLine(pilha.Pop());
     }
 }

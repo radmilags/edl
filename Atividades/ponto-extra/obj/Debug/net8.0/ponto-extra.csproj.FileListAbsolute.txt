@@ -3,3 +3,13 @@
 /workspaces/edl/Atividades/ponto-extra/obj/Debug/net8.0/ponto-extra.AssemblyInfo.cs
 /workspaces/edl/Atividades/ponto-extra/obj/Debug/net8.0/ponto-extra.csproj.CoreCompileInputs.cache
 /workspaces/edl/Atividades/ponto-extra/obj/Debug/net8.0/ponto-extra.sourcelink.json
+/workspaces/edl/Atividades/ponto-extra/bin/Debug/net8.0/ponto-extra
+/workspaces/edl/Atividades/ponto-extra/bin/Debug/net8.0/ponto-extra.deps.json
+/workspaces/edl/Atividades/ponto-extra/bin/Debug/net8.0/ponto-extra.runtimeconfig.json
+/workspaces/edl/Atividades/ponto-extra/bin/Debug/net8.0/ponto-extra.dll
+/workspaces/edl/Atividades/ponto-extra/bin/Debug/net8.0/ponto-extra.pdb
+/workspaces/edl/Atividades/ponto-extra/obj/Debug/net8.0/ponto-extra.dll
+/workspaces/edl/Atividades/ponto-extra/obj/Debug/net8.0/refint/ponto-extra.dll
+/workspaces/edl/Atividades/ponto-extra/obj/Debug/net8.0/ponto-extra.pdb
+/workspaces/edl/Atividades/ponto-extra/obj/Debug/net8.0/ponto-extra.genruntimeconfig.cache
+/workspaces/edl/Atividades/ponto-extra/obj/Debug/net8.0/ref/ponto-extra.dll

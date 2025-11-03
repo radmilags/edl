@@ -1,105 +1,84 @@
 ﻿using System;
-using System.Collections; // Necessário para ArrayList
+using System.Collections;
 
-public class PilhaComArrayList
+public class Pilha
 {
-    // --- Renomeado de _lista para pilha ---
-    private ArrayList pilha; 
+    ArrayList pilha;
 
-    public PilhaComArrayList()
+    public Pilha()
     {
-        // --- Alterado aqui ---
         pilha = new ArrayList();
     }
 
-    // Retorna o número de elementos na pilha
-    public int Count
+    // Adiciona ao topo
+    public void Push(object o)
     {
-        // --- Alterado aqui ---
-        get { return pilha.Count; }
+        pilha.Add(o);
     }
 
-    // Verifica se a pilha está vazia
-    public bool IsEmpty
-    {
-        // --- Alterado aqui ---
-        get { return pilha.Count == 0; }
-    }
-
-    // Adiciona um item ao topo da pilha (Push)
-    public void Push(object item)
-    {
-        // --- Alterado aqui ---
-        pilha.Add(item);
-    }
-
-    // Remove e retorna o item do topo da pilha (Pop)
+    // Remove e retorna o topo
     public object Pop()
     {
-        if (IsEmpty)
+        if (isEmpty())
         {
             throw new InvalidOperationException("A pilha está vazia.");
         }
 
-        // --- Alterado aqui ---
-        object item = pilha[pilha.Count - 1];
+        object o = pilha[pilha.Count - 1];
+        pilha.RemoveAt(pilha.Count - 1); // Remove
         
-        // --- Alterado aqui ---
-        pilha.RemoveAt(pilha.Count - 1);
-        
-        return item;
+        return o;
     }
 
-    // Retorna o item do topo da pilha sem removê-lo (Peek)
-    public object Peek()
+    // --- NOVO MÉTODO ADICIONADO ---
+    // Apenas retorna o topo (não remove)
+    public object Top()
     {
-        if (IsEmpty)
+        if (isEmpty())
         {
             throw new InvalidOperationException("A pilha está vazia.");
         }
 
-        // --- Alterado aqui ---
-        return pilha[pilha.Count - 1];
+        // Apenas retorna o último item, sem removê-lo
+        return pilha[pilha.Count - 1]; 
+    }
+    // --- FIM DO NOVO MÉTODO ---
+
+    public int Size()
+    {
+        return pilha.Count;
     }
 
-    // Limpa a pilha
-    public void Clear()
+    public bool isEmpty()
     {
-        // --- Alterado aqui ---
-        pilha.Clear();
+        return pilha.Count == 0;
     }
 }
 
-// --- Exemplo de Uso (continua igual) ---
-public class ExemploArrayList
+class Program
 {
     public static void Main(string[] args)
     {
-        // O nome da CLASSE continua o mesmo
-        PilhaComArrayList minhaPilha = new PilhaComArrayList(); 
+        Pilha pilha = new Pilha();
+
+        pilha.Push(10);
+        pilha.Push(5); // '5' é o topo
+
+        // --- EXEMPLO USANDO Top() ---
         
-        minhaPilha.Push(10);
-        minhaPilha.Push(20);
-        minhaPilha.Push("Olá"); 
+        // 1. Usando Top() para "espiar" o topo
+        Console.WriteLine($"Item no topo (Top): {pilha.Top()}"); // Saída: 5
+        
+        // 2. Verificando o tamanho (ainda deve ser 2)
+        Console.WriteLine($"Tamanho (depois do Top): {pilha.Size()}"); // Saída: 2
 
-        Console.WriteLine($"Item no topo (Peek): {minhaPilha.Peek()}"); 
+        // 3. Usando Pop() para remover o topo
+        Console.WriteLine($"Item removido (Pop): {pilha.Pop()}"); // Saída: 5
 
-        try
-        {
-            string s = (string)minhaPilha.Pop(); 
-            Console.WriteLine($"Pop: {s}");
+        // 4. Verificando o tamanho (agora deve ser 1)
+        Console.WriteLine($"Tamanho (depois do Pop): {pilha.Size()}"); // Saída: 1
 
-            int i = (int)minhaPilha.Pop(); 
-            Console.WriteLine($"Pop: {i}");
-            
-            int j = (int)minhaPilha.Pop(); 
-            Console.WriteLine($"Pop: {j}");
-
-            minhaPilha.Pop(); // Lança Exceção
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Erro: {ex.Message}");
-        }
+        // 5. Espiando o novo topo
+        Console.WriteLine($"Novo topo (Top): {pilha.Top()}"); // Saída: 10
     }
 }
