@@ -43,7 +43,7 @@ public class Lista
 
     public bool isLast(object elemento)
     {
-        if (isEmpty()) return false; // Se está vazia, não pode ser o último
+        if (isEmpty()) return false; // Se ta não pode ser o último
         if (Last() == elemento) return true;
         return false;
     }
