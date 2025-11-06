@@ -1,36 +1,28 @@
 public class Lista
 {
 
-    private No Inicio;
-    private No Final;
+    private No? Inicio;
+    private No? Final;
     private int size;
 
     public Lista()
     {
-        this.Inicio = new No(null); //utilizando o no sentinela
-        this.Final = new No(null); //utilizando o no sentinela - ver melhor como funciona isso ai
+        Inicio = new No(null); //utilizando o no sentinela
+        Final = new No(null); //utilizando o no sentinela - ver melhor como funciona isso ai
 
-        this.Inicio.Proximo = this.Final;
-        this.Final.Anterior = this.Inicio;
+        Inicio.Proximo = Final;
+        Final.Anterior = Inicio;
 
-        this.size = 0;
+        size = 0;
+    }
+    public int Size()
+    {
+        return size;
     }
 
     public bool isEmpty()
     {
         if (size == 0) return true;
-        return false;
-    }
-
-    public bool isFirst(object o)
-    {
-        if (First() == o) return true;
-        return false;
-    }
-
-    public bool isLast(object o)
-    {
-        if (Last() == o) return true;
         return false;
     }
 
@@ -60,6 +52,17 @@ public class Lista
 
     }
 
+    public object First()
+    {
+        if (isEmpty()) throw new InvalidOperationException("Lista vazia");
+        return this.Inicio.Proximo.Elemento;
+    }
+
+    public object Last()
+    {
+        if (isEmpty()) throw new InvalidOperationException("Lista vazia");
+        return this.Final.Anterior.Elemento;
+    }
     public void insertFirst(object elemento)
     {
         //refazer esses métodos no papel pois sao muito confusos
@@ -80,7 +83,7 @@ public class Lista
             throw new InvalidOperationException("A lista está vazia, more.");
         }
 
-        No noParaRemover = this.Inicio.Proximo;
+        No noParaRemover = Inicio.Proximo;
         No proximoNo = noParaRemover.Proximo;
 
         Inicio.Proximo = proximoNo;
@@ -106,7 +109,7 @@ public class Lista
     }
     private No GetNo(int posicao)
     {
-        if (posicao < 0 || posicao >= this.size)
+        if (posicao < 0 || posicao >= size)
         {
             throw new IndexOutOfRangeException("Posição inválida, more.");
         }
@@ -157,7 +160,7 @@ public class Lista
             return;
         }
 
-        if (posicao == this.size)
+        if (posicao == size)
         {
             insertLast(elemento);
             return;
@@ -166,15 +169,16 @@ public class Lista
         No noDaFrente = GetNo(posicao);
         No noDeTras = noDaFrente.Anterior;
         No novoNo = new No(elemento);
-        
+
         novoNo.Proximo = noDaFrente;
         novoNo.Anterior = noDeTras;
 
         noDeTras.Proximo = novoNo;
         noDaFrente.Anterior = novoNo;
 
-        this.size++;
+        size++;
     }
+
 
     public void insertAfter(int posicao, object elemento)
     {
@@ -195,6 +199,29 @@ public class Lista
         noDaFrente.Anterior = novoNo;
 
         size++;
+    }
+    
+    public void PrintaLista()
+    {
+        Console.WriteLine("Printando");
+        Console.Write("[");
+
+        No atual = Inicio.Proximo;
+
+        while (atual != Final)
+        {
+            Console.Write(atual.Elemento);
+
+            if (atual.Proximo != Final)
+            {
+                Console.Write(", ");
+            }
+
+            atual = atual.Proximo;
+        }
+
+        Console.Write("]");
+        Console.WriteLine();
     }
 
     
