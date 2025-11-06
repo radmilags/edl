@@ -34,16 +34,18 @@ public class Lista
         return false;
     }
 
-    public object First()
+    public bool isFirst(object elemento)
     {
-        if (isEmpty()) throw new InvalidOperationException("Lista vazia");
-        return this.Inicio.Proximo.Elemento;
+        if (isEmpty()) return false;
+        if (First() == elemento) return true;
+        return false;
     }
 
-    public object Last()
+    public bool isLast(object elemento)
     {
-        if (isEmpty()) throw new InvalidOperationException("Lista vazia");
-        return this.Final.Anterior.Elemento;
+        if (isEmpty()) return false; // Se está vazia, não pode ser o último
+        if (Last() == elemento) return true;
+        return false;
     }
 
     public void insertLast(object elemento)
