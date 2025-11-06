@@ -174,4 +174,23 @@ public class Lista
         Console.Write("]");
         Console.WriteLine();
     }
+
+    public void PrintaLista()
+    {
+        Console.WriteLine("Printando a lista (Encadeada):");
+        Console.Write("[");
+        No atual = this.Inicio.Proximo;
+        while (atual != this.Final)
+        {
+            Console.Write(atual.Elemento);
+
+            if (atual.Proximo != this.Final)
+            {
+                Console.Write(", ");
+            }
+            atual = atual.Proximo;
+        }
+        Console.Write("]");
+        Console.WriteLine();
+    }
 }

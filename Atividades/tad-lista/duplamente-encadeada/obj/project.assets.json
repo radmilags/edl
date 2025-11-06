@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/codespace/.nuget/packages/": {}
+    "C:\\Users\\Mila\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspaces/edl/Atividades/tad-lista/duplamente-encadeada/duplamente-encadeada.csproj",
+      "projectUniqueName": "C:\\Users\\Mila\\OneDrive\\Área de Trabalho\\edl\\edl\\Atividades\\tad-lista\\duplamente-encadeada\\duplamente-encadeada.csproj",
       "projectName": "duplamente-encadeada",
-      "projectPath": "/workspaces/edl/Atividades/tad-lista/duplamente-encadeada/duplamente-encadeada.csproj",
-      "packagesPath": "/home/codespace/.nuget/packages/",
-      "outputPath": "/workspaces/edl/Atividades/tad-lista/duplamente-encadeada/obj/",
+      "projectPath": "C:\\Users\\Mila\\OneDrive\\Área de Trabalho\\edl\\edl\\Atividades\\tad-lista\\duplamente-encadeada\\duplamente-encadeada.csproj",
+      "packagesPath": "C:\\Users\\Mila\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mila\\OneDrive\\Área de Trabalho\\edl\\edl\\Atividades\\tad-lista\\duplamente-encadeada\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/codespace/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Mila\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -43,7 +43,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -59,12 +60,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.17, 8.0.17]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[8.0.17, 8.0.17]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.17, 8.0.17]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.17, 8.0.17]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
