@@ -1,0 +1,5 @@
+C:\Users\Mila\OneDrive\Área de Trabalho\edl\edl\Atividades\tad-sequencia\obj\Debug\net9.0\tad-sequencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mila\OneDrive\Área de Trabalho\edl\edl\Atividades\tad-sequencia\obj\Debug\net9.0\tad-sequencia.AssemblyInfoInputs.cache
+C:\Users\Mila\OneDrive\Área de Trabalho\edl\edl\Atividades\tad-sequencia\obj\Debug\net9.0\tad-sequencia.AssemblyInfo.cs
+C:\Users\Mila\OneDrive\Área de Trabalho\edl\edl\Atividades\tad-sequencia\obj\Debug\net9.0\tad-sequencia.csproj.CoreCompileInputs.cache
+C:\Users\Mila\OneDrive\Área de Trabalho\edl\edl\Atividades\tad-sequencia\obj\Debug\net9.0\tad-sequencia.sourcelink.json
