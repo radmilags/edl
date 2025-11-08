@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tad-sequencia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54f092f2f0d2d3e157aeb318a58869a50431f186")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7fb0bd7af641f5b0031a45bb6645aa9c0d089175")]
 [assembly: System.Reflection.AssemblyProductAttribute("tad-sequencia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tad-sequencia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

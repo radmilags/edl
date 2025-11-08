@@ -10,8 +10,8 @@ public class Sequencia
     {
         Inicio = new No(null);
         Final = new No(null);
-        Inicio.Proximo = Final;
-        Final.Anterior = Inicio;
+        Inicio.SetProximo(Final);
+        Final.SetAnterior(Inicio);
         size = 0;
     }
 
@@ -28,18 +28,17 @@ public class Sequencia
     
     public void PrintaSequencia()
     {
-        //ve ai esse metodo
-        
+        //ve se isso ai ta certo, ne mulher
         Console.Write("[");
-        No? atual = Inicio.Proximo;
+        No? atual = Inicio.GetProximo();
         while (atual != Final)
         {
-            Console.Write(atual.Elemento);
-            if (atual.Proximo != Final)
+            Console.Write(atual.GetElemento());
+            if (atual.GetProximo() != Final)
             {
                 Console.Write(", ");
             }
-            atual = atual.Proximo;
+            atual = atual.GetProximo();
         }
         Console.Write("]");
         Console.WriteLine();
@@ -51,7 +50,7 @@ public class Sequencia
         {
             throw new InvalidOperationException("Sequência vazia, more.");
         }
-        return Inicio.Proximo;
+        return Inicio.GetProximo();
     }
 
     public No? last()
@@ -60,111 +59,111 @@ public class Sequencia
         {
             throw new InvalidOperationException("Sequência vazia, more.");
         }
-        return Final.Anterior;
+        return Final.GetAnterior();
     }
 
     public No? before(No n)
     {
-        if (n == Inicio.Proximo)
+        if (n == Inicio.GetProximo())
         {
-             throw new InvalidOperationException("Não há nó antes do primeiro, more.");
+            throw new InvalidOperationException("Não há nó antes do primeiro, more.");
         }
-        return n.Anterior;
+        return n.GetAnterior();
     }
 
     public No? after(No n)
     {
-        if (n == Final.Anterior)
+        if (n == Final.GetAnterior())
         {
-             throw new InvalidOperationException("Não há nó depois do último, more.");
+            throw new InvalidOperationException("Não há nó depois do último, more.");
         }
-        return n.Proximo;
+        return n.GetProximo();
     }
 
     public void insertFirst(object o)
     {
         No novoNo = new No(o);
-        No antigoPrimeiro = Inicio.Proximo;
+        No antigoPrimeiro = Inicio.GetProximo();
 
-        novoNo.Proximo = antigoPrimeiro;
-        novoNo.Anterior = Inicio;
-        antigoPrimeiro.Anterior = novoNo;
-        Inicio.Proximo = novoNo;
+        novoNo.SetProximo(antigoPrimeiro);
+        novoNo.SetAnterior(Inicio);
+        antigoPrimeiro.SetAnterior(novoNo);
+        Inicio.SetProximo(novoNo);
         size++;
     }
 
     public void insertLast(object o)
     {
         No novoNo = new No(o);
-        No antigoUltimo = Final.Anterior;
+        No antigoUltimo = Final.GetAnterior();
 
-        novoNo.Anterior = antigoUltimo;
-        novoNo.Proximo = Final;
-        antigoUltimo.Proximo = novoNo;
-        Final.Anterior = novoNo;
+        novoNo.SetAnterior(antigoUltimo);
+        novoNo.SetProximo(Final);
+        antigoUltimo.SetProximo(novoNo);
+        Final.SetAnterior(novoNo);
         size++;
     }
 
     public void insertBefore(No n, object o)
     {
-        No noDeTras = n.Anterior;
+        No noDeTras = n.GetAnterior();
         No novoNo = new No(o);
 
-        novoNo.Proximo = n;
-        novoNo.Anterior = noDeTras;
-        noDeTras.Proximo = novoNo;
-        n.Anterior = novoNo;
+        novoNo.SetProximo(n);
+        novoNo.SetAnterior(noDeTras);
+        noDeTras.SetProximo(novoNo);
+        n.SetAnterior(novoNo);
         size++;
     }
 
     public void insertAfter(No n, object o)
     {
-        No noDaFrente = n.Proximo;
+        No noDaFrente = n.GetProximo();
         No novoNo = new No(o);
 
-        novoNo.Proximo = noDaFrente;
-        novoNo.Anterior = n;
-        n.Proximo = novoNo;
-        noDaFrente.Anterior = novoNo;
+        novoNo.SetProximo(noDaFrente);
+        novoNo.SetAnterior(n);
+        n.SetProximo(novoNo);
+        noDaFrente.SetAnterior(novoNo);
         size++;
     }
 
-    public object remove(No n)
+    public object Remove(No n)
     {
-        No anterior = n.Anterior;
-        No proximo = n.Proximo;
+        No anterior = n.GetAnterior();
+        No proximo = n.GetProximo();
 
-        anterior.Proximo = proximo;
-        proximo.Anterior = anterior;
+        anterior.SetProximo(proximo);
+        proximo.SetAnterior(anterior);
         size--;
-        return n.Elemento;
+        return n.GetElemento();
     }
 
     public object replaceElement(No n, object o)
     {
-        object antigo = n.Elemento;
-        n.Elemento = o;
+        object antigo = n.GetElemento();
+        n.SetElemento(o);
         return antigo;
     }
 
     public void swapElements(No n, No q)
     {
-        object temp = n.Elemento;
-        n.Elemento = q.Elemento;
-        q.Elemento = temp;
+        object temp = n.GetElemento();
+        n.SetElemento(q.GetElemento());
+        q.SetElemento(temp);
     }
     
     public object elemAtRank(int r)
     {
         No no = atRank(r);
-        return no.Elemento;
+        return no.GetElemento();
     }
     
     public object replaceAtRank(int r, object o)
     {
         No noParaTrocar = atRank(r);
-        object antigoElemento = noParaTrocar.Elemento;
-        noParaTrocar.Elemento = o;
+        object antigoElemento = noParaTrocar.GetElemento();
+        noParaTrocar.SetElemento(o);
         return antigoElemento;
     }
 
@@ -201,18 +200,18 @@ public class Sequencia
         No atual;
         if (r < size / 2)
         {
-            atual = Inicio.Proximo;
+            atual = Inicio.GetProximo();
             for (int i = 0; i < r; i++)
             {
-                atual = atual.Proximo;
+                atual = atual.GetProximo();
             }
         }
         else
         {
-            atual = Final.Anterior;
+            atual = Final.GetAnterior();
             for (int i = size - 1; i > r; i--)
             {
-                atual = atual.Anterior;
+                atual = atual.GetAnterior();
             }
         }
         return atual;
@@ -220,11 +219,11 @@ public class Sequencia
 
     public int rankOf(No n)
     {
-        No atual = Inicio.Proximo;
+        No atual = Inicio.GetProximo();
         int r = 0;
         while (atual != n && atual != Final)
         {
-            atual = atual.Proximo;
+            atual = atual.GetProximo();
             r++;
         }
         

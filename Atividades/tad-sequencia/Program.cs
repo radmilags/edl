@@ -12,19 +12,19 @@ class Program
         sequencia.insertFirst("Harry");
         sequencia.PrintaSequencia();
         
-        sequencia.insertLast("Snape");
+        sequencia.insertLast("Luna");
         sequencia.PrintaSequencia();
 
         sequencia.insertAtRank(2, "Hermione");
         sequencia.PrintaSequencia();
         
-        Console.WriteLine("Elemento no rank 2: " + sequencia.elemAtRank(2));
+        Console.WriteLine(sequencia.elemAtRank(2));
 
         sequencia.removeAtRank(0);
         sequencia.PrintaSequencia();
 
         No noParaTrocar = sequencia.atRank(1);
-        sequencia.replaceElement(noParaTrocar, "Riddle");
+        sequencia.replaceElement(noParaTrocar, "Neville");
         sequencia.PrintaSequencia();
 
         No noParaRemover = sequencia.atRank(0);
