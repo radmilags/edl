@@ -1,0 +1,5 @@
+/workspaces/edl/Atividades/tad-lista/duplamente-encadeada/obj/Debug/net8.0/duplamente-encadeada.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/edl/Atividades/tad-lista/duplamente-encadeada/obj/Debug/net8.0/duplamente-encadeada.AssemblyInfoInputs.cache
+/workspaces/edl/Atividades/tad-lista/duplamente-encadeada/obj/Debug/net8.0/duplamente-encadeada.AssemblyInfo.cs
+/workspaces/edl/Atividades/tad-lista/duplamente-encadeada/obj/Debug/net8.0/duplamente-encadeada.csproj.CoreCompileInputs.cache
+/workspaces/edl/Atividades/tad-lista/duplamente-encadeada/obj/Debug/net8.0/duplamente-encadeada.sourcelink.json
