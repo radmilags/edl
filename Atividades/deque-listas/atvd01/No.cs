@@ -1,14 +1,14 @@
 using System;
 public class No
 {
-    public object elemento;
-    public No? proximo;
-    public No? anterior;
+    public object elemento {get; set;}
+    public No? proximo {get; set;}
+    public No? anterior {get; set;}
 
     public No(object elemento)
     {
         this.elemento = elemento;
-        this.anterior = null;
-        this.proximo = null;
+        anterior = null;
+        proximo = null;
     }
 }

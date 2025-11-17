@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("pilha_encadeada")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12c3f1f047bdadaabb4718eae4c196348c7621aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd1df114a3893ed5510af4986ec83191e230dd0b")]
 [assembly: System.Reflection.AssemblyProductAttribute("pilha_encadeada")]
 [assembly: System.Reflection.AssemblyTitleAttribute("pilha_encadeada")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

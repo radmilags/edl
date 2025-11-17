@@ -1,47 +1,37 @@
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 
 public class Deque
 {
-    private object[] array;
-    private int n_elementos;
-    private int tamanho; // tamanho
-    private int incremento;
-    private int i, f;
+    private int size;
+    private No? inicio;
+    private No? fim;
 
-    public Deque(int tamanho, int incremento) // if incremento == 0; estratégia de duplicacao senao estrategia do incremento
+    public Deque() 
     {
-        array = new object[tamanho];
-        this.tamanho=tamanho; 
-        this.incremento=incremento;
+        inicio = null;
+        fim = null;
+        size = 0;
     }
 
-    public void Enqueue(object elemento)
+    public bool isEmpty()
     {
-        if (Size() == tamanho - 1)
-        {
-            int novoTam;
-            if (incremento == 0) novoTam = tamanho * 2;
-            else novoTam = tamanho + incremento;
-
-            object[] novoArray = new object[novoTam];
-
-            int ii = i;
-
-            for (int ff = 0; ff < Size(); ff++)
-            {
-                novoArray[ff] = array[ii];
-                ii = (ii + 1) % tamanho;
-            }
-            f = Size();
-            i = 0;
-            tamanho = novoTam;
-            array = novoArray;
-        }
-        array[f] = elemento;
-        f = (f + 1) % tamanho;
-        n_elementos++;
+        if (Size() == 0) return true;
+        return false;
     }
+
+    public int Size()
+    {
+        return this.size;
+    }
+
+    public void inserirInicio(object elemento)
+    {
+        No novoNo = new No(elemento);
+
+    }
+
 
     public object Dequeue()
     {
@@ -51,30 +41,7 @@ public class Deque
         return elemento;
     }
 
-    public object First() {
-        return array[i];
-    }
-
-    public void Indices()
-    {
-        Console.WriteLine($"i = {i}, f = {f}");
-    }
-
-    public int Size()
-    {
-        return tamanho;
-    }
-
-    public int N_elementos()
-    {
-        return n_elementos;
-    }
-
-    public bool isEmpty()
-    {
-        if (n_elementos == 0) return true;
-        return false;
-    }
+    
 
     public void PrintaFila() {
         foreach(object o in array){
