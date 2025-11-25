@@ -10,8 +10,10 @@ public class Deque
 
     public Deque() 
     {
-        inicio = null;
-        fim = null;
+        inicio = new No(null);
+        fim = new No(null);
+        inicio.proximo = final;
+        final.anterior = inicio;
         size = 0;
     }
 
@@ -33,19 +35,47 @@ public class Deque
     }
 
 
-    public object Dequeue()
+    public void InserirInicio(object o)
     {
-        object elemento = array[i];
-        i = (i + 1) % tamanho;
-        n_elementos--;
-        return elemento;
+        No novo = new No(o) {inicio, proximo = inicio.proximo};
+        inicio.proximo.anterior = novo;
+        inicio.proximo = novo;
+        size++;
     }
 
-    
+    public void InserirInicio(object o)
+    {
+        No novo = new No(o) {inicio, proximo = inicio.proximo};
+        final.anterior.proximo = novo;
+        final.anterior = novo;
+        this.size++;
+    }
 
-    public void PrintaFila() {
-        foreach(object o in array){
-            Console.WriteLine(o);
-        }
+    public object RemoverInicio(){
+        if(isEmpty()) throw new Exception("ta vazio more");
+        No no = inicio.proximo;
+        object antigo = no.elemento;
+        inicio.proximo = no.proximo;
+        no.proximo.anterior = inicio;
+        this.size--;
+        return antigo;
+    }
+    public object RemoverFim(){
+        if(isEmpty()) throw new Exception("ta vazio more");
+        No no = final.anterior;
+        object antigo = no.elemento;
+        final.anterior = no.anterior;
+        no.anterior.proximo = final;
+        this.size--;
+        return antigo;
+    }
+
+    public object Primeiro(){
+        if(isEmpty()) throw new Exception("ta vazio more");
+        return inicio.proximo.elemento;
+    }
+    public object Ultimo(){
+        if(isEmpty()) throw new Exception("ta vazio more");
+        return final.anterior.elemento;
     }
 }
