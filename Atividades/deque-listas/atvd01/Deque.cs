@@ -6,12 +6,12 @@ public class Deque
 {
     private int size;
     private No? inicio;
-    private No? fim;
+    private No? final;
 
     public Deque() 
     {
         inicio = new No(null);
-        fim = new No(null);
+        final = new No(null);
         inicio.proximo = final;
         final.anterior = inicio;
         size = 0;
@@ -28,12 +28,6 @@ public class Deque
         return this.size;
     }
 
-    public void inserirInicio(object elemento)
-    {
-        No novoNo = new No(elemento);
-
-    }
-
 
     public void InserirInicio(object o)
     {
@@ -43,7 +37,7 @@ public class Deque
         size++;
     }
 
-    public void InserirInicio(object o)
+    public void InserirFinal(object o)
     {
         No novo = new No(o) {inicio, proximo = inicio.proximo};
         final.anterior.proximo = novo;
