@@ -1,84 +1,115 @@
 using System;
-using System.Collections.Generic;
-
 public class Deque
 {
-    private object[] array;
-    private int n_elementos;
-    private int tamanho; // tamanho
-    private int incremento;
-    private int i, f;
+    private int size;
+    private No? inicio; 
+    private No? final;  
 
-    public Deque(int tamanho, int incremento) // if incremento == 0; estratégia de duplicacao senao estrategia do incremento
+    public Deque() 
     {
-        array = new object[tamanho];
-        this.tamanho=tamanho; 
-        this.incremento=incremento;
-    }
-
-    public void Enqueue(object elemento)
-    {
-        if (Size() == tamanho - 1)
-        {
-            int novoTam;
-            if (incremento == 0) novoTam = tamanho * 2;
-            else novoTam = tamanho + incremento;
-
-            object[] novoArray = new object[novoTam];
-
-            int ii = i;
-
-            for (int ff = 0; ff < Size(); ff++)
-            {
-                novoArray[ff] = array[ii];
-                ii = (ii + 1) % tamanho;
-            }
-            f = Size();
-            i = 0;
-            tamanho = novoTam;
-            array = novoArray;
-        }
-        array[f] = elemento;
-        f = (f + 1) % tamanho;
-        n_elementos++;
-    }
-
-    public object Dequeue()
-    {
-        object elemento = array[i];
-        i = (i + 1) % tamanho;
-        n_elementos--;
-        return elemento;
-    }
-
-    public object First() {
-        return array[i];
-    }
-
-    public void Indices()
-    {
-        Console.WriteLine($"i = {i}, f = {f}");
-    }
-
-    public int Size()
-    {
-        return tamanho;
-    }
-
-    public int N_elementos()
-    {
-        return n_elementos;
+        inicio = null;
+        final = null;
+        size = 0;
     }
 
     public bool isEmpty()
     {
-        if (n_elementos == 0) return true;
-        return false;
+        return size == 0;
     }
 
-    public void PrintaFila() {
-        foreach(object o in array){
-            Console.WriteLine(o);
+    public int Size()
+    {
+        return this.size;
+    }
+
+    public void InserirInicio(object o)
+    {
+        No novo = new No(o);
+        
+        if (isEmpty())
+        {
+            inicio = novo;
+            final = novo; 
         }
+        else
+        {
+            novo.proximo = inicio;
+            inicio = novo;
+        }
+        
+        size++;
+    }
+
+    public void InserirFinal(object o)
+    {
+        No novo = new No(o);
+
+        if (isEmpty())
+        {
+            inicio = novo;
+            final = novo;
+        }
+        else
+        {
+            final.proximo = novo; 
+            final = novo;
+        }
+        
+        this.size++;
+    }
+
+    public object RemoverInicio()
+    {
+        if(isEmpty()) throw new Exception("ta vazio more");
+        
+        object antigo = inicio.elemento;
+        inicio = inicio.proximo;
+
+        size--;
+
+        if (size == 0)
+        {
+            final = null;
+        }
+
+        return antigo;
+    }
+    public object RemoverFim()
+    {
+        if(isEmpty()) throw new Exception("ta vazio more");
+
+        object antigo = final.elemento;
+
+        if (inicio == final)
+        {
+            inicio = null;
+            final = null;
+        }
+        else
+        {
+            No atual = inicio;
+            while (atual.proximo != final)
+            {
+                atual = atual.proximo;
+            }
+
+            final = atual;
+            final.proximo = null;
+        }
+
+        this.size--;
+        return antigo;
+    }
+
+    public object Primeiro()
+    {
+        if(isEmpty()) throw new Exception("ta vazio more");
+        return inicio.elemento;
+    }
+
+    public object Ultimo()
+    {
+        if(isEmpty()) throw new Exception("ta vazio more");
+        return final.elemento;
     }
 }

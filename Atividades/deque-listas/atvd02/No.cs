@@ -1,4 +1,5 @@
 using System;
+
 public class No
 {
     public object elemento;
@@ -7,6 +8,6 @@ public class No
     public No(object elemento)
     {
         this.elemento = elemento;
-        proximo = null;
+        this.proximo = null;
     }
 }
