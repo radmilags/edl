@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 
 public class Deque
 {
@@ -60,7 +59,7 @@ public class Deque
         if(isEmpty()) throw new Exception("ta vazio more");
         
         No noAntigo = inicio.proximo; 
-        object dado = noAntigo.elemento;
+        object antigo = noAntigo.elemento;
 
         inicio.proximo = noAntigo.proximo;
         noAntigo.proximo.anterior = inicio;
@@ -69,7 +68,7 @@ public class Deque
         noAntigo.anterior = null;
 
         this.size--;
-        return dado;
+        return antigo;
     }
 
     public object RemoverFim()
@@ -77,7 +76,7 @@ public class Deque
         if(isEmpty()) throw new Exception("ta vazio more");
 
         No noAntigo = final.anterior; 
-        object dado = noAntigo.elemento;
+        object antigo = noAntigo.elemento;
 
         final.anterior = noAntigo.anterior;
         noAntigo.anterior.proximo = final;
@@ -86,7 +85,7 @@ public class Deque
         noAntigo.anterior = null;
 
         this.size--;
-        return dado;
+        return antigo;
     }
 
     public object Primeiro()
