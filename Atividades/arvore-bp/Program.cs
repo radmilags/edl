@@ -3,8 +3,7 @@ public class Programa
     public static void Main(string[] args)
     {
         ABPArray abp = new ABPArray(30); 
-
-        Console.WriteLine(">>> 1. Inserção Inicial: 10, 5, 15, 2, 8, 22");
+        
         abp.Insert(10, "Raiz");
         abp.Insert(5, "Cinco");
         abp.Insert(15, "Quinze");
@@ -28,3 +27,4 @@ public class Programa
         Console.WriteLine("Tamanho final: " + abp.size());
     }
 }
+
