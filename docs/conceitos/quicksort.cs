@@ -50,7 +50,9 @@ public class Program{
 
         ordenador.Sort(dados, 0, dados.Length - 1);
 
-        Console.WriteLine("\nDepois:");
+        Console.Write();
+
+        Console.WriteLine("Depois:");
         Imprimir(dados);
         
     }
