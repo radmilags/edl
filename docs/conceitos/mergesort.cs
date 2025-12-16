@@ -77,7 +77,9 @@ class Program
 
         alg.Sort(dados, 0, dados.Length - 1);
 
-        Console.WriteLine("\nOrdenado:");
+        Console.Write();
+
+        Console.WriteLine("Ordenado:");
         Imprimir(dados);
     }
 
